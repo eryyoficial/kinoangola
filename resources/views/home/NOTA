@@ -1,0 +1,65 @@
+<h2>Top 5 Estabelecimentos com Maiores Avaliações</h2>
+<div class="container">
+    <div class="row">
+        <!-- Estabelecimento 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="caminho/para/imagem1.jpg" class="card-img-top" alt="Imagem do Estabelecimento 1">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Estabelecimento 1</h5>
+                    <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
+                    <p class="card-text"><strong>Avaliação:</strong> 4.9/5</p>
+                    <a href="link-para-estabelecimento1" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Estabelecimento 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="caminho/para/imagem2.jpg" class="card-img-top" alt="Imagem do Estabelecimento 2">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Estabelecimento 2</h5>
+                    <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
+                    <p class="card-text"><strong>Avaliação:</strong> 4.8/5</p>
+                    <a href="link-para-estabelecimento2" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Estabelecimento 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="caminho/para/imagem3.jpg" class="card-img-top" alt="Imagem do Estabelecimento 3">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Estabelecimento 3</h5>
+                    <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
+                    <p class="card-text"><strong>Avaliação:</strong> 4.7/5</p>
+                    <a href="link-para-estabelecimento3" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Estabelecimento 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="caminho/para/imagem4.jpg" class="card-img-top" alt="Imagem do Estabelecimento 4">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Estabelecimento 4</h5>
+                    <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
+                    <p class="card-text"><strong>Avaliação:</strong> 4.6/5</p>
+                    <a href="link-para-estabelecimento4" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+        <!-- Estabelecimento 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="caminho/para/imagem5.jpg" class="card-img-top" alt="Imagem do Estabelecimento 5">
+                <div class="card-body">
+                    <h5 class="card-title">Nome do Estabelecimento 5</h5>
+                    <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
+                    <p class="card-text"><strong>Avaliação:</strong> 4.5/5</p>
+                    <a href="link-para-estabelecimento5" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

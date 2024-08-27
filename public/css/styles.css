@@ -1,0 +1,195 @@
+ body {
+     font-family: Arial, sans-serif;
+ }
+
+ header {
+     padding: 1em;
+     text-align: center;
+ }
+
+ nav a {
+     margin: 0 1em;
+     text-decoration: none;
+ }
+
+ main {
+     padding: 1em;
+ }
+
+ form div {
+     margin-bottom: 1em;
+ }
+
+ form label {
+     display: block;
+     margin-bottom: .5em;
+ }
+
+
+
+ /*================================ SIGN ================================*/
+
+ .sign_container {
+     max-width: 600px;
+     width: 100%;
+ }
+
+ .login-container {
+     max-width: 400px;
+     margin: auto;
+     padding-top: 50px;
+ }
+
+ .login-card {
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+
+
+
+
+
+
+
+
+ /*================================ HOME INDEX ================================*/
+ .service_icon {
+     color: rgb(159, 159, 179);
+     font-size: 70px;
+ }
+
+
+
+
+
+
+
+ /*================================ ESTABELECIMENTOS ================================*/
+
+ .card {
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+
+ .cliente_cont_est {
+     height: 350px;
+     display: flex;
+ }
+
+ .cliente_desc_est {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     justify-content: star;
+
+ }
+
+ .cliente_cont_son {
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+ }
+
+
+ .cliente_cards {
+     max-height: 300px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+
+ }
+
+ .cliente_cards img {
+     width: 100%;
+ }
+
+ .card-title {
+     font-size: 1.5em;
+ }
+
+ .review {
+     margin-bottom: 10px;
+ }
+
+ #map,
+ .map {
+     max-width: 400px;
+     height: 100%;
+     background-color: #777;
+ }
+
+
+
+
+ /*================================ ERRRRRRRROOOOOOOO 404 ================================*/
+
+ .main_error {
+     font-family: Arial, sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     overflow: hidden;
+ }
+
+ .error-content {
+     text-align: center;
+     animation: slide-up 0.5s ease-out;
+ }
+
+ .error-number {
+     font-size: 10rem;
+     font-weight: bold;
+     color: #dc3545;
+     margin-bottom: 0;
+ }
+
+ .error-message {
+     font-size: 2rem;
+     margin-top: 10px;
+     color: #6c757d;
+ }
+
+ .btn-back {
+     margin-top: 20px;
+     opacity: 0;
+     animation: fade-in 1s ease-out forwards;
+ }
+
+ .btn-back:hover {
+     transform: scale(1.05);
+ }
+
+ @keyframes slide-up {
+     0% {
+         transform: translateY(50px);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ @keyframes fade-in {
+     0% {
+         opacity: 0;
+     }
+
+     100% {
+         opacity: 1;
+     }
+ }
+
+
+
+
+
+
+
+ /*================================ RODAPÉ ================================*/
+ footer {
+     background-color: #e9ecef;
+     padding: 20px;
+ }
