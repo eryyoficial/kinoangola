@@ -1,12 +1,12 @@
 <?php
 
-namespace app\controllers;
+namespace App\Http\Controllers;
 
-class HomeController
+use Illuminate\Http\Request;
+
+class HomeController extends Controller
 {
-    public function index()
-    {
-        $content = 'home/index';
-        require_once __DIR__ . '/../views/layout/main.php';
+    public function index(){
+        return view('home');
     }
 }
