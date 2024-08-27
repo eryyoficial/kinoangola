@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Kino Angola</title>
-
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,7 +28,7 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/kino/public/images/back (1).png" class="d-block w-100" alt="...">
+            <img src="/images/back (1).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Primeiro slide</h5>
                 <p>Conteúdo representativo para o primeiro slide.</p>
@@ -37,7 +37,7 @@
     </div>
     <div class="carousel-inner active">
         <div class="carousel-item">
-            <img src="/kino/public/images/back (1).png" class="d-block w-100" alt="...">
+            <img src="/images/back (1).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Primeiro slide</h5>
                 <p>Conteúdo representativo para o primeiro slide.</p>
@@ -46,7 +46,7 @@
     </div>
     <div class="carousel-inner active">
         <div class="carousel-item">
-            <img src="/kino/public/images/back (1).png" class="d-block w-100" alt="...">
+            <img src="/images/back (1).png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h5>Primeiro slide</h5>
                 <p>Conteúdo representativo para o primeiro slide.</p>
@@ -82,21 +82,21 @@
             <h2>Bares</h2>
             <p>Encontre bares incríveis para se divertir.</p>
 
-            <img style="width: 300px;" src="/kino/public/images/qd (1).png" alt="imagem rest" srcset="">
+            <img style="width: 300px;" src="/images/qd (1).png" alt="imagem rest" srcset="">
 
         </div>
         <div style="flex-direction: column; gap: 0 2rem" class="col-md-4  d-flex justify-content-center align-items-center">
             <h2>Roulotes</h2>
             <p>Explore opções de comida de rua deliciosas.</p>
 
-            <img style="width: 300px;" src="/kino/public/images/qd (13).png" alt="imagem rest" srcset="">
+            <img style="width: 300px;" src="/images/qd (13).png" alt="imagem rest" srcset="">
 
         </div>
         <div style="flex-direction: column; gap: 0 2rem" class="col-md-4  d-flex justify-content-center align-items-center">
             <h2>Restaurantes</h2>
             <p>Descubra os melhores restaurantes na cidade.</p>
 
-            <img style="width: 300px;" src="/kino/public/images/qd (12).png" alt="imagem rest" srcset="">
+            <img style="width: 300px;" src="/images/qd (12).png" alt="imagem rest" srcset="">
 
         </div>
     </div>
@@ -116,7 +116,7 @@
                 <!-- Estabelecimento 1 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="/kino/public/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 1">
+                        <img src="/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 1">
                         <div class="card-body">
                             <h5 class="card-title">Nome do Estabelecimento 1</h5>
                             <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
@@ -128,7 +128,7 @@
                 <!-- Estabelecimento 2 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="/kino/public/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 2">
+                        <img src="/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 2">
                         <div class="card-body">
                             <h5 class="card-title">Nome do Estabelecimento 2</h5>
                             <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
@@ -140,7 +140,7 @@
                 <!-- Estabelecimento 3 -->
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="/kino/public/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 3">
+                        <img src="/images/qd (8).png" class="card-img-top" alt="Imagem do Estabelecimento 3">
                         <div class="card-body">
                             <h5 class="card-title">Nome do Estabelecimento 3</h5>
                             <p class="card-text">Descrição breve do estabelecimento, destacando pontos fortes.</p>
@@ -217,7 +217,7 @@
 
     </div>
 </main>
-
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
 </html>
