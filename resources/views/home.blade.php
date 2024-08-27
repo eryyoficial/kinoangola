@@ -1,12 +1,15 @@
-@extends('layouts.default') 
+@extends('layouts.default')
 
 @section('content')
-       <!-- ========================= CARROSSEL ========================= -->
-       <div id="carouselExampleCaptions" class="carousel slide">
+    <!-- ========================= CARROSSEL ========================= -->
+    <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -48,7 +51,8 @@
         <p class="text-center">Encontre os melhores restaurantes, bares, e food trucks em Luanda!</p>
 
         <form class="form-inline justify-content-center mt-4">
-            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Buscar por nome, tipo de comida..." aria-label="Search">
+            <input class="form-control mr-sm-2 mb-1" type="search" placeholder="Buscar por nome, tipo de comida..."
+                aria-label="Search">
             <button class="btn btn-warning my-2 my-sm-0" type="submit">Buscar</button>
         </form>
 
@@ -56,21 +60,24 @@
 
         <!-- ========================= BANNER 1 ========================= -->
         <div class="row mt-5">
-            <div style="flex-direction: column; gap: 0 2rem" class="col-md-4  d-flex justify-content-center align-items-center">
+            <div style="flex-direction: column; gap: 0 2rem"
+                class="col-md-4  d-flex justify-content-center align-items-center">
                 <h2>Bares</h2>
                 <p>Encontre bares incríveis para se divertir.</p>
 
                 <img style="width: 300px;" src="/images/qd (1).png" alt="imagem rest" srcset="">
 
             </div>
-            <div style="flex-direction: column; gap: 0 2rem" class="col-md-4  d-flex justify-content-center align-items-center">
+            <div style="flex-direction: column; gap: 0 2rem"
+                class="col-md-4  d-flex justify-content-center align-items-center">
                 <h2>Roulotes</h2>
                 <p>Explore opções de comida de rua deliciosas.</p>
 
                 <img style="width: 300px;" src="/images/qd (13).png" alt="imagem rest" srcset="">
 
             </div>
-            <div style="flex-direction: column; gap: 0 2rem" class="col-md-4  d-flex justify-content-center align-items-center">
+            <div style="flex-direction: column; gap: 0 2rem"
+                class="col-md-4  d-flex justify-content-center align-items-center">
                 <h2>Restaurantes</h2>
                 <p>Descubra os melhores restaurantes na cidade.</p>
 
@@ -133,16 +140,16 @@
                 <div id="estabelecimentos-list">
                     <!--    Os estabelecimentos serão carregados aqui -->
                 </div>
-                <button id="load-more-btn" class="btn btn-warning load-more mb-5">Ver mais</button>
+                <button id="load-more-btn" class="btn btn-warning load-more mb-5 w-25">Ver mais</button>
             </div>
             <!--
-        <div class="container">
-            <h2>Melhores Estabelecimentos</h2>
-            <div id="estabelecimentos-list">
-                 Os estabelecimentos serão carregados aqui
-            </div>
-            <button id="load-more-btn" class="btn btn-warning load-more">Ver mais</button>
-        </div> -->
+            <div class="container">
+                <h2>Melhores Estabelecimentos</h2>
+                <div id="estabelecimentos-list">
+                     Os estabelecimentos serão carregados aqui
+                </div>
+                <button id="load-more-btn" class="btn btn-warning load-more">Ver mais</button>
+            </div> -->
 
 
 
@@ -153,12 +160,14 @@
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-search service_icon'></i></div>
                     <h4>Descubra com Facilidade</h4>
-                    <p>Encontre rapidamente restaurantes, bares, food trucks e locais de lazer com nossa busca personalizada.</p>
+                    <p>Encontre rapidamente restaurantes, bares, food trucks e locais de lazer com nossa busca
+                        personalizada.</p>
                 </div>
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-food-menu service_icon'></i></div>
                     <h4>Variedade Gastronômica</h4>
-                    <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências gastronômicas exclusivas.</p>
+                    <p>Explore uma vasta seleção de comidas e bebidas, desde pratos tradicionais a experiências
+                        gastronômicas exclusivas.</p>
                 </div>
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-box service_icon'></i></div>
@@ -168,28 +177,33 @@
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-star service_icon'></i></div>
                     <h4>Avaliações e Recomendações</h4>
-                    <p>Deixe e leia avaliações para escolher o melhor estabelecimento baseado na experiência de outros clientes.</p>
+                    <p>Deixe e leia avaliações para escolher o melhor estabelecimento baseado na experiência de outros
+                        clientes.</p>
                 </div>
                 <!-- Serviços para Estabelecimentos -->
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-planet service_icon'></i></div>
                     <h4>Maior Visibilidade Online</h4>
-                    <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e atraindo novos clientes.</p>
+                    <p>Tenha seu negócio destacado em uma plataforma amplamente acessada, aumentando a visibilidade e
+                        atraindo novos clientes.</p>
                 </div>
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-cube service_icon'></i></div>
                     <h4>Gerenciamento Simplificado</h4>
-                    <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu perfil e ofertas.</p>
+                    <p>Atualize informações, cardápios e preços facilmente, e mantenha o controle total sobre o seu perfil e
+                        ofertas.</p>
                 </div>
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-chart service_icon'></i></div>
                     <h4>Análise de Desempenho</h4>
-                    <p>Acompanhe métricas e feedbacks para entender o desempenho do seu negócio e ajustar suas estratégias.</p>
+                    <p>Acompanhe métricas e feedbacks para entender o desempenho do seu negócio e ajustar suas estratégias.
+                    </p>
                 </div>
                 <div class="col-md-3 py-5">
                     <div class="service-icon"><i class='bx bx-support service_icon'></i></div>
                     <h4>Suporte Dedicado</h4>
-                    <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na plataforma.</p>
+                    <p>Receba assistência especializada para resolver problemas e otimizar a presença do seu negócio na
+                        plataforma.</p>
                 </div>
             </div>
 
