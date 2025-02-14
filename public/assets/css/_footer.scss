@@ -1,15 +1,32 @@
 footer {
-    @include FlexBox (space-around, center, column);
+    @include flex-grow (1, 1fr);
     gap: 4rem;
     background-color: $color-black;
     padding: 4rem;
 
     .content {
-        @include FlexBox (space-around, center, row);
+        border: solid red;
 
+        .sessao {
+
+            .title {
+                font-size: $size-base;
+                font-weight: $weight-semibold;
+                color: $color-gray-dark;
+            }
+
+            .desc {
+                @include FlexBox (start, flex-start, column);
+                a {
+                    color:$color-footer-dark;
+                    font-size: $size-smaller;
+                    font-weight: $weight-medium;
+                }
+            }
+        }
     }
 
-    .separador{
+    .separador {
         height: 1px;
         width: 100%;
         background-color: $color-footer-dark;
@@ -17,7 +34,8 @@ footer {
 
     }
 
-    .copy{
+    .copy {
         color: $color-footer-dark;
+        font-size: $size-smallito;
     }
 }

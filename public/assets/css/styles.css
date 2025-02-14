@@ -562,8 +562,24 @@ footer {
 footer .content {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: space-around;
   flex-direction: row;
+}
+footer .content .sessao .title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #B8B8B8;
+}
+footer .content .sessao .desc {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+footer .content .sessao .desc a {
+  color: #696969;
+  font-size: 0.938rem;
+  font-weight: 500;
 }
 footer .separador {
   height: 1px;
@@ -573,4 +589,5 @@ footer .separador {
 }
 footer .copy {
   color: #696969;
+  font-size: 0.813rem;
 }/*# sourceMappingURL=styles.css.map */
