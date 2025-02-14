@@ -1,13 +1,16 @@
 footer {
-    @include flex-grow (1, 1fr);
-    gap: 4rem;
+    @include FlexBox (center, center, column);
+    gap: 2rem;
     background-color: $color-black;
     padding: 4rem;
 
     .content {
+        width: 100%;
+        @include FlexGrid (4, 1fr);
         border: solid red;
 
         .sessao {
+
 
             .title {
                 font-size: $size-base;
