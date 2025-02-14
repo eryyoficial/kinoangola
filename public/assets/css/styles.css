@@ -661,6 +661,7 @@ header .extras .link-login {
   background-color: #f8f8f8;
 }
 .filtersearch .content .tools .btn-filtro {
+  color: #353535;
   padding: 0.3rem;
   padding-right: 0.8rem;
   cursor: pointer;
@@ -699,19 +700,44 @@ header .extras .link-login {
   border-radius: 10px;
 }
 .filtersearch .content .PesquisaSwiper {
-  margin-top: 3rem;
+  position: relative;
   padding: 1rem;
-  flex-grow: 1;
-  max-width: 600px;
+  max-width: 650px;
   width: 100%;
   height: 100%;
   z-index: 2;
+}
+.filtersearch .content .PesquisaSwiper .swiper-button-prev, .filtersearch .content .PesquisaSwiper .swiper-button-next {
+  position: absolute;
+  top: 3%;
+  scale: 0.37;
+  font-weight: 800;
+  color: #B8B8B8;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.4s;
+}
+.filtersearch .content .PesquisaSwiper .swiper-button-prev:hover, .filtersearch .content .PesquisaSwiper .swiper-button-next:hover {
+  background-color: #F4F2F2;
+  color: #D90404;
+  scale: 0.4;
+}
+.filtersearch .content .PesquisaSwiper .swiper-button-prev {
+  left: 74%;
+  z-index: 3;
+}
+.filtersearch .content .PesquisaSwiper .swiper-button-next {
+  right: 3%;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-top: 3rem;
+  width: 100%;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide {
   border-radius: 10px;
@@ -775,7 +801,7 @@ header .extras .link-login {
   flex-grow: 1;
 }
 .filtersearch .search-map {
-  flex-grow: 1;
+  flex: 50%;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;

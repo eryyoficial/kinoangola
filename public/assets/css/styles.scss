@@ -457,6 +457,7 @@
             }
 
             .btn-filtro {
+                color: $color-black-2;
                 padding: .3rem;
                 padding-right: .8rem;
                 cursor: pointer;
@@ -502,16 +503,44 @@
         }
 
         .PesquisaSwiper {
-            margin-top: 3rem;
+            position: relative;
             padding: 1rem;
-            flex-grow: 1;
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
             height: 100%;
             z-index: 2;
 
+            .swiper-button-prev, .swiper-button-next{
+                position: absolute;
+                top: 3%;
+                scale: .37;
+                font-weight: $weight-extrabold;
+                color: $color-gray-dark;
+                background-color: $color-white;
+                padding: 3rem;
+                border-radius: $radius-around;
+                box-shadow: $shadow-3;
+                transition: $transicao;
+
+                &:hover{
+                    background-color: $color-gray-light;
+                    color: $color-red;
+                    scale: .4;
+                }
+            }
+
+            .swiper-button-prev{
+                left: 74%;
+                z-index: 3;
+            }
+            .swiper-button-next{
+                right: 3%;
+            }
+
             .swiper-wrapper{
                 @include FlexBox (center, center, row);
+                margin-top: 3rem;
+                width: 100%;
 
                 .swiper-slide{
                     border-radius: $radius-second;
@@ -579,12 +608,14 @@
                 }
 
             }
+
+
           }
 
     }
 
     .search-map {
-        flex-grow: 1;
+        flex: 50%;
         padding: 2rem;
         box-shadow: $shadow-2;
         border-radius: $radius-first;
