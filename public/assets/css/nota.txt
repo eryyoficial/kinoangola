@@ -1,6 +1,34 @@
 
-            @include BorderTeste ();
-
-
- 
-                background-color: rgba(0, 0, 0, 0.634);
+                <div class="swiper FilterSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-pratos">
+                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <div class="info">
+                                    <div class="acima">
+                                        <span>snap 1</span>
+                                        <span>snap 2</span>
+                                        <i class='bx bx-cart-add' ></i>
+                                    </div>
+                                    <h3>Title Card</h3>
+                                    <div class="description">
+                                        <p>info 1</p>
+                                        <p>info 2</p>
+                                        <p>info 3</p>
+                                    </div>
+                                    <div class="extras">
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <i class='bx bxs-star' ></i>
+                                        <p class="price">2.000Kz</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>

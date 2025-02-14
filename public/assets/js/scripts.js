@@ -14,3 +14,12 @@ var swiper = new Swiper(".HeroSwiper", {
         dynamicBullets: true,
     },
 });
+
+
+var swiper = new Swiper(".PesquisaSwiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop:true,
+});
