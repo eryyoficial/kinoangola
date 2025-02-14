@@ -190,6 +190,7 @@ header .extras .link-login {
 .HeroSwiper {
   width: 100%;
   height: 500px;
+  background-color: #FFFFFF;
 }
 .HeroSwiper .hero-slide-1 {
   position: relative;
@@ -460,7 +461,7 @@ header .extras .link-login {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
   padding: 1.5rem;
-  border: 1px solid #D9D9D9;
+  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -610,6 +611,8 @@ header .extras .link-login {
   justify-content: center;
   align-items: stretch;
   flex-direction: row;
+  background-color: #FFFFFF;
+  gap: 1rem;
 }
 .filtersearch .content {
   display: flex;
@@ -619,11 +622,11 @@ header .extras .link-login {
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
+  background-color: #f8f8f8;
 }
 .filtersearch .content .tools {
   position: relative;
   flex-grow: 1;
-  padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   display: flex;
   justify-content: center;
@@ -659,6 +662,7 @@ header .extras .link-login {
 }
 .filtersearch .content .tools .btn-close i:hover {
   background-color: #f8f8f8;
+  color: #D90404;
 }
 .filtersearch .content .tools .btn-filtro {
   color: #353535;
@@ -675,21 +679,28 @@ header .extras .link-login {
   transition: 0.4s;
 }
 .filtersearch .content .tools .btn-filtro i:hover {
-  background-color: #f8f8f8;
+  background-color: #FAFAFA;
+  color: #858585;
+}
+.filtersearch .content .tools:hover .resultados {
+  display: block;
 }
 .filtersearch .content .tools .resultados {
   display: none;
   position: absolute;
   flex-grow: 1;
-  padding: 2rem;
-  background-color: #f2f2f2;
+  padding: 1rem;
+  background-color: #FFFFFF;
   width: 100%;
   top: 110%;
   left: 0;
   border-radius: 10px;
+  transition: 0.4s;
+  z-index: 3;
 }
 .filtersearch .content .tools .resultados h3 {
   color: #B8B8B8;
+  font-size: 1rem;
 }
 .filtersearch .content .tools .resultados .resultado {
   display: none;
@@ -702,12 +713,14 @@ header .extras .link-login {
 .filtersearch .content .PesquisaSwiper {
   position: relative;
   padding: 1rem;
-  max-width: 650px;
+  max-width: 550px;
   width: 100%;
   height: 100%;
+  padding-bottom: 5.5rem;
   z-index: 2;
 }
-.filtersearch .content .PesquisaSwiper .swiper-button-prev, .filtersearch .content .PesquisaSwiper .swiper-button-next {
+.filtersearch .content .PesquisaSwiper .swiper-button-prev,
+.filtersearch .content .PesquisaSwiper .swiper-button-next {
   position: absolute;
   top: 3%;
   scale: 0.37;
@@ -719,42 +732,53 @@ header .extras .link-login {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   transition: 0.4s;
 }
-.filtersearch .content .PesquisaSwiper .swiper-button-prev:hover, .filtersearch .content .PesquisaSwiper .swiper-button-next:hover {
+.filtersearch .content .PesquisaSwiper .swiper-button-prev:hover,
+.filtersearch .content .PesquisaSwiper .swiper-button-next:hover {
   background-color: #F4F2F2;
   color: #D90404;
   scale: 0.4;
 }
 .filtersearch .content .PesquisaSwiper .swiper-button-prev {
-  left: 74%;
+  left: 75%;
   z-index: 3;
 }
 .filtersearch .content .PesquisaSwiper .swiper-button-next {
-  right: 3%;
+  right: 0%;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 3rem;
-  width: 100%;
+  padding: 0 2rem 0 0;
+  margin-top: 3.5rem;
+  background-color: #f8f8f8;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
   border-radius: 10px;
   background-color: #FFFFFF;
-  padding: 1rem;
-  margin-right: 2rem;
+  gap: 1rem;
+  background-color: #f8f8f8;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos {
   display: flex;
   justify-content: stretch;
   align-items: center;
   flex-direction: row;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos img {
-  width: 150px;
+  width: 120px;
   border-radius: 10px;
+  transition: 0.4s;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos img:hover {
+  scale: 1.02;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
   display: flex;
@@ -763,17 +787,84 @@ header .extras .link-login {
   flex-direction: column;
   flex-grow: 1;
 }
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
+  margin-bottom: 0.3rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
+  font-size: 0.813rem;
+  font-weight: 0.6rem;
+  border-radius: 10px;
+  padding: 0.3rem 0.45rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
+  color: rgb(126, 0, 126);
+  background-color: rgb(255, 228, 255);
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
+  color: #00894F;
+  background-color: #D9F8EB;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.35rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1,
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1 {
+  font-size: 0.875rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover {
+  scale: 1.02;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #D9F8EB;
+  color: #00894F;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
+  background-color: #00894F;
+  color: #D9F8EB;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
+  color: #353535;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+}
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
   display: flex;
   justify-content: start;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   gap: 0.5rem;
+  margin-left: 0.5rem;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
   opacity: 0.7;
   font-weight: 300;
   font-size: 0.813rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
+  width: 5px;
+  height: 1px;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  background-color: #464646;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
   display: flex;
@@ -787,24 +878,43 @@ header .extras .link-login {
   justify-content: start;
   align-items: flex-start;
   flex-direction: row;
+  margin-top: 0.7rem;
+  margin-left: 0.4rem;
   gap: 0;
   align-self: flex-start;
 }
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
+  color: #E8B209;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
+  transform: translateY(-1px);
+}
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
   align-self: flex-end;
+  font-weight: 700;
+  font-size: 0.938rem;
+  color: #464646;
 }
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-grow: 1;
+.filtersearch .content .PesquisaSwiper .swiper-pagination-bullet,
+.filtersearch .content .PesquisaSwiper .swiper-pagination-bullet-active {
+  background-color: #d55c5c;
+  font-size: 0.813rem;
+  padding: 0.5rem;
+}
+.filtersearch .content .PesquisaSwiper .swiper-pagination-bullet p,
+.filtersearch .content .PesquisaSwiper .swiper-pagination-bullet-active p {
+  margin-top: -8px;
+  margin-left: -3px;
+  color: white;
 }
 .filtersearch .search-map {
   flex: 50%;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
+  background-color: #f8f8f8;
 }
 
 footer {

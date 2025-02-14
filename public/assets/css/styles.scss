@@ -15,6 +15,7 @@
 .HeroSwiper {
     width: 100%;
     height: 500px;
+    background-color: $color-white;
 
     .hero-slide-1 {
         @include HeroSlide();
@@ -243,7 +244,7 @@
             box-shadow: $shadow-2;
             border-radius: $radius-first;
             padding: 1.5rem;
-            border: 1px solid $color-gray-base;
+            background-color: $color-white;
             @include FlexBox (center, center, column);
             gap: .5rem;
 
@@ -405,21 +406,24 @@
 .filtersearch {
     @extend .container;
     @include FlexBox(center, stretch, row);
+    background-color: $color-white;
+    gap: 1rem;
 
     .content {
         @include FlexBox (center, stretch, column);
         padding: 2rem;
         box-shadow: $shadow-2;
         border-radius: $radius-first;
+        background-color: $color-white-background;
 
 
         .tools {
             position: relative;
             flex-grow: 1;
-            padding: 2rem;
             box-shadow: $shadow-2;
             @include FlexBox (center, stretch, row);
             border-radius: $radius-first;
+
 
             input,
             button {
@@ -452,6 +456,7 @@
 
                     &:hover {
                         background-color: $color-white-background;
+                        color: $color-red;
                     }
                 }
             }
@@ -471,24 +476,33 @@
                     transition: $transicao;
 
                     &:hover {
-                        background-color: $color-white-background;
+                        background-color: $kino-color-white-light;
+                        color: $color-gray-darkness;
                     }
                 }
+            }
+
+
+            &:hover .resultados {
+                display: block;
             }
 
             .resultados {
                 display: none;
                 position: absolute;
                 flex-grow: 1;
-                padding: 2rem;
-                background-color: $color-white-3;
+                padding: 1rem;
+                background-color: $color-white;
                 width: 100%;
                 top: 110%;
                 left: 0;
                 border-radius: $radius-second;
+                transition: $transicao;
+                z-index: 3;
 
                 h3 {
                     color: $color-gray-dark;
+                    font-size: $size-base;
                 }
 
                 .resultado {
@@ -505,12 +519,14 @@
         .PesquisaSwiper {
             position: relative;
             padding: 1rem;
-            max-width: 650px;
+            max-width: 550px;
             width: 100%;
             height: 100%;
+            padding-bottom: 5.5rem;
             z-index: 2;
 
-            .swiper-button-prev, .swiper-button-next{
+            .swiper-button-prev,
+            .swiper-button-next {
                 position: absolute;
                 top: 3%;
                 scale: .37;
@@ -522,85 +538,169 @@
                 box-shadow: $shadow-3;
                 transition: $transicao;
 
-                &:hover{
+                &:hover {
                     background-color: $color-gray-light;
                     color: $color-red;
                     scale: .4;
                 }
             }
 
-            .swiper-button-prev{
-                left: 74%;
+            .swiper-button-prev {
+                left: 75%;
                 z-index: 3;
             }
-            .swiper-button-next{
-                right: 3%;
+
+            .swiper-button-next {
+                right: 0%;
             }
 
-            .swiper-wrapper{
-                @include FlexBox (center, center, row);
-                margin-top: 3rem;
-                width: 100%;
+            .swiper-wrapper {
+                padding: 0 2rem 0 0;
+                margin-top: 3.5rem;
+                background-color: $color-white-background;
 
-                .swiper-slide{
+                .swiper-slide {
+                    @include FlexBox (start, stretch, column);
                     border-radius: $radius-second;
                     background-color: $color-white;
-                    padding: 1rem;
-                    margin-right: 2rem;
+                    gap: 1rem;
+                    background-color: $color-white-background;
 
-                    .card-pratos{
+                    .card-pratos {
                         @include FlexBox(stretch, center, row);
+                        background-color: $color-white;
+                        width: 100%;
+                        padding: 1rem;
+                        border-radius: $radius-second;
                         gap: .5rem;
+                        cursor: pointer;
 
-                        img{
-                            width: 150px;
+                        img {
+                            width: 120px;
                             border-radius: $radius-second;
+                            transition: $transicao;
+    
+                            &:hover{
+                                scale: 1.02;
+                            }
                         }
 
-                        .info{
+                        .info {
                             @include FlexBox(center, stretch, column);
                             flex-grow: 1;
 
+                            .acima {
+                                @include FlexBox (space-between, center, row);
+                                flex-grow: 1;
 
+                                .spans {
+                                    margin-bottom: .3rem;
 
-                            .description{
-                                @include FlexBox(start, flex-start, row);
+                                    span {
+                                        font-size: $size-smallito;
+                                        font-weight: .6rem;
+                                        border-radius: $radius-second;
+                                        padding: .3rem .45rem;
+                                    }
+
+                                    .pop {
+                                        color: rgb(126, 0, 126);
+                                        background-color: rgb(255, 228, 255);
+                                    }
+
+                                    .freeshipping {
+                                        color: $color-green-dark;
+                                        background-color: $color-green-light;
+                                    }
+                                }
+
+                                .cta {
+                                    @include FlexBox(space-between, center, row);
+                                    gap: .35rem;
+
+                                    .btn-p-2,
+                                    i {
+                                        padding: 0.5rem;
+                                        border-radius: $radius-first;
+                                    }
+
+                                    .btn-p-2 {
+                                        font-size: $size-small;
+
+                                        &:hover {
+                                            scale: 1.02;
+                                        }
+                                    }
+
+                                    i {
+                                        font-size: $size-base;
+                                        font-weight: $weight-medium;
+                                        background-color: $color-green-light;
+                                        color: $color-green-dark;
+                                        transition: $transicao;
+                                        cursor: pointer;
+
+                                        &:hover {
+                                            background-color: $color-green-dark;
+                                            color: $color-green-light;
+                                        }
+                                    }
+                                }
+                            }
+
+                            h3 {
+                                color: $color-black-2;
+                                font-size: $size-x-large;
+                                margin-left: .4rem;
+                            }
+
+                            .description {
+                                @include FlexBox(start, center, row);
                                 gap: 0.5rem;
+                                margin-left: .5rem;
 
-                                p{
+                                p {
                                     opacity: .7;
                                     font-weight: $weight-light;
                                     font-size: $size-smallito;
                                 }
+
+                                .sep {
+                                    width: 5px;
+                                    height: 1px;
+                                    margin-top: .2rem;
+                                    border-radius: $radius-around;
+                                    background-color: $color-black-3;
+                                }
                             }
 
-                            .extras{
+                            .extras {
                                 @include FlexBox (space-between, center, row);
                                 width: 100%;
 
-                                .avaliacoes{
+                                .avaliacoes {
                                     @include FlexBox (start, flex-start, row);
+                                    margin-top: .7rem;
+                                    margin-left: .4rem;
                                     gap: 0;
                                     align-self: flex-start;
+
+                                    i {
+                                        color: $color-yellow;
+                                        cursor: pointer;
+                                        transition: $transicao;
+
+                                        &:hover{transform: translateY(-1px);
+                                        }
+                                    }
                                 }
 
-                                .price{
+                                .price {
                                     align-self: flex-end;
-                                    
+                                    font-weight: $weight-bold;
+                                    font-size: $size-smaller;
+                                    color: $color-black-3;
                                 }
-                            }
-
-                            .acima{
-                                @include FlexBox (space-between, center, row);
-                                flex-grow: 1;
-
-                                .spans{
-                                }
-
-                                i{
-                                    
-                                }
-
                             }
 
                         }
@@ -609,8 +709,21 @@
 
             }
 
+            .swiper-pagination-bullet,
+            .swiper-pagination-bullet-active {
+                background-color: $color-red-light;
+                font-size: $size-smallito;
+                padding: .5rem;
 
-          }
+                p {
+                    margin-top: -8px;
+                    margin-left: -3px;
+                    color: white;
+
+                }
+            }
+
+        }
 
     }
 
@@ -619,6 +732,7 @@
         padding: 2rem;
         box-shadow: $shadow-2;
         border-radius: $radius-first;
+        background-color: $color-white-background;
 
     }
 }

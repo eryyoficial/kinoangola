@@ -12,9 +12,9 @@
                                     </div>
                                     <h3>Title Card</h3>
                                     <div class="description">
-                                        <p>info 1</p>
-                                        <p>info 2</p>
-                                        <p>info 3</p>
+                                        <p>La Plaza</p>
+                                            <div class="sep"></div>
+                                        <p>Luanda, Camama</p>
                                     </div>
                                     <div class="extras">
                                         <i class='bx bxs-star' ></i>
@@ -32,3 +32,10 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+
+
+                <span class='freeshipping'>Entrega</span>
+                                            <span class='pop'>Popular</span>
+
+
+                                           
