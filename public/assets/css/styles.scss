@@ -550,7 +550,8 @@
                                 width: 100%;
 
                                 .avaliacoes{
-                                    border: red solid 1px;
+                                    @include FlexBox (start, flex-start, row);
+                                    gap: 0;
                                     align-self: flex-start;
                                 }
 
@@ -558,6 +559,19 @@
                                     align-self: flex-end;
                                     
                                 }
+                            }
+
+                            .acima{
+                                @include FlexBox (space-between, center, row);
+                                flex-grow: 1;
+
+                                .spans{
+                                }
+
+                                i{
+                                    
+                                }
+
                             }
 
                         }

@@ -757,11 +757,22 @@ header .extras .link-login {
   width: 100%;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
-  border: red solid 1px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 0;
   align-self: flex-start;
 }
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
   align-self: flex-end;
+}
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
 }
 .filtersearch .search-map {
   flex-grow: 1;
