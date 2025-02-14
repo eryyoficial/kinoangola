@@ -1,0 +1,341 @@
+/*======================================== IMPORTS ======================================== */
+/* TIPO DE LETRA */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* OUTROS */
+@import './vars';
+@import './mixins';
+@import './essencial';
+@import './header';
+@import './footer';
+
+
+
+/*======================================== HERO - BANNER EM CARROSSEL ======================================== */
+
+.swiper {
+    width: 100%;
+    height: 500px;
+
+    .hero-slide-1 {
+        @include HeroSlide();
+        @include FlexGrid (1, 1fr);
+        place-items: center;
+
+        &::before {
+
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        img {
+            filter: blur(3px);
+        }
+
+        .content {
+            text-align: center;
+            margin: auto;
+            padding: 1.5rem;
+            width: 800px;
+
+            h1 {
+                color: $color-white;
+                font-size: $size-super-biggest;
+            }
+
+            p {
+                margin-top: 1rem;
+                padding-inline: 3rem;
+                color: $color-gray-dark;
+            }
+
+            form {
+                @include FlexBox(stretch, center, row);
+                flex-wrap: wrap;
+                gap: 0;
+                transition: $transicao;
+                margin-top: 2rem;
+                margin-inline: auto;
+                width: 500px;
+                border-radius: $radius-first;
+
+                &:hover {
+                    outline: 2px solid $color-red;
+                }
+
+                button {
+                    background-color: $color-white-background;
+                    padding: .7rem 1rem;
+                    border-top-left-radius: $radius-first;
+                    border-bottom-left-radius: $radius-first;
+                    border: none;
+                    outline: none;
+
+                    i {
+                        font-weight: $weight-semibold;
+                        color: $color-red;
+                    }
+                }
+
+                input {
+                    flex-grow: 1;
+                    background-color: white;
+                    padding: .7rem 1rem;
+                    border-top-right-radius: $radius-first;
+                    border-bottom-right-radius: $radius-first;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .hero-slide-2 {
+        @include HeroSlide();
+        @include FlexGrid (2, 1fr);
+        place-items: center;
+        padding: 5rem;
+
+        &::before {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+
+        .content {
+            padding: 3rem 3rem 3rem 0;
+
+            .paragrafito {
+                color: $color-beige-darkness;
+                font-size: $size-small;
+            }
+
+            h2 {
+                color: $color-white;
+                font-size: $size-super-biggest;
+            }
+
+            .desc {
+                font-size: $size-base;
+                color: $color-gray-dark;
+                opacity: .9;
+            }
+
+            .cta {
+                margin-top: 4rem;
+
+                .cta-botao-1,
+                .cta-botao-2 {
+                    font-size: $size-smaller;
+                    font-weight: $weight-medium
+                }
+
+                .cta-botao-1 {
+                    @extend .btn-p-2;
+                }
+
+                .cta-botao-2 {
+                    @extend .btn-c;
+                }
+            }
+        }
+    }
+
+    .hero-slide-3 {
+        @include HeroSlide();
+        @include FlexBox (center, center, column);
+        padding: 5rem;
+
+        &::before {
+
+            background-color: rgba(0, 0, 0, 0.226);
+        }
+
+        img {
+            filter: blur(2px);
+        }
+
+        .content {
+            width: 800px;
+            text-align: center;
+            margin: auto;
+            padding: 1rem;
+            @include FlexBox (center, center, column);
+            gap: 1rem;
+
+            h1 {
+                color: $color-white;
+                font-size: $size-super-biggest;
+            }
+
+            p {
+                color: $color-gray-dark;
+            }
+
+            .btn-p-2 {
+                margin-top: 1rem;
+                font-weight: $weight-medium;
+            }
+        }
+    }
+
+    .swiper-pagination-bullet,
+    .swiper-pagination-bullet-active {
+        background-color: $color-red-light;
+    }
+}
+
+
+/*======================================== DESTAQUE DA SEMANA ======================================== */
+.destaque {
+    @extend .container;
+    @include FlexBox (center, center, column);
+    gap: 2rem;
+    background-color: $color-white;
+
+    .content {
+        @include FlexGrid (2, 450px);
+        gap: 0;
+
+        img {
+            flex-grow: 1;
+        }
+
+        .desc {
+            flex-grow: 1;
+            @include FlexBox (start, flex-start, column);
+            height: 100%;
+
+            h3 {
+                font-size: $size-super-biggest;
+                color: $color-black;
+            }
+
+            p {
+                font-weight: $weight-extralight;
+                margin-top: 0.5rem;
+            }
+
+            .botoes {
+                margin-top: 2rem;
+                gap: 2rem;
+
+                .btn-c {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}
+
+
+/*======================================== SERVIÇOS ======================================== */
+.services {
+    @extend .container;
+    @include FlexBox (center, center, column);
+    background-color: $color-white-background;
+
+    .content {
+        @include FlexGrid (3, 300px);
+        text-align: center;
+        place-items: center;
+        margin: auto;
+        padding: 2rem;
+        gap: 2rem;
+
+        .service-card {
+            box-shadow: $shadow-2;
+            border-radius: $radius-first;
+            padding: 1.5rem;
+            border: 1px solid $color-gray-base;
+            @include FlexBox (center, center, column);
+            gap: .5rem;
+
+            i {
+                font-size: 4rem;
+                color: $color-red;
+            }
+
+            h3 {
+                color: $color-black-3;
+                font-size: $size-base;
+            }
+
+            p {
+                color: $color-gray-darkness;
+                font-weight: $weight-light;
+                font-size: $size-smallito;
+            }
+        }
+    }
+}
+
+
+/*======================================== LOCAIS DE LAZER ======================================== */
+.locais {
+    @extend .container;
+    @include FlexBox (center, center, column);
+    background-color: $color-white;
+
+    .content {
+        @include FlexGrid (4, 250px);
+        gap: 2rem;
+        margin: 1rem 0 4rem;
+
+        .link-card{
+            position: relative;
+            @include FlexBox (center, center, column);
+            padding: 1rem;
+            width: 100%;
+            height: 250px;
+            border-radius: $radius-first;
+            box-shadow: $shadow-2;
+            transition: $transicao;
+
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.064);
+                z-index: 2;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: $radius-first;
+                z-index: 1;
+                transition: $transicao;
+            }
+
+            h3 {
+                position: absolute;
+                transform: translateY(100px);
+                z-index: 3;
+                opacity: 0;
+                visibility: hidden;
+                color: $color-white;
+                transition: $transicao;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+
+            &:hover h3{
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+
+            &:hover img{
+                filter: blur(2px);
+            }
+        }
+
+        .btn-p-2{
+            font-weight: $weight-semibold;
+        }
+    }
+}

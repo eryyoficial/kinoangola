@@ -1,0 +1,97 @@
+/*======================================== TAGS PRINCIPAIS ======================================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $family-body;
+    font-size: 16px;
+    background-color: $color-white-background;
+}
+
+a {
+    text-decoration: none;
+    transition: .4s;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: $family-title;
+}
+
+
+/*======================================== CLASSES PRINCIPAIS ======================================== */
+.btn-p-1 {
+    padding: .5rem 1rem;
+    border: none;
+    background-color: $kino-color-yellow-dark;
+    border-radius: $radius-first;
+    color: $color-white;
+    transition: $transicao;
+
+    &:hover {
+        opacity: .65;
+    }
+}
+
+.btn-p-2 {
+    padding: .5rem 1rem;
+    border: none;
+    background-color: $color-red;
+    border-radius: $radius-first;
+    color: $color-white;
+    cursor: pointer;
+    transition: $transicao;
+
+    &:hover {
+        scale: 1.03;
+        background-color: $color-red-black;
+    }
+}
+
+.btn-c {
+    padding: .5rem 1rem;
+    outline: 1px solid $color-gray-darkness;
+    background-color: transparent;
+    border-radius: $radius-first;
+    color: $color-gray-darkness;
+    cursor: pointer;
+    transition: $transicao;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-gray-darkness;
+    }
+}
+
+
+.btn-s {
+    padding: .5rem 1rem;
+    border: 1px solid $color-red;
+    background-color: transparent;
+    border-radius: $radius-first;
+    color: $color-red;
+    transition: $transicao;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-red;
+    }
+}
+
+.container{
+    padding: 6rem 12rem;
+
+    h2 {
+        font-size: $size-biggest;
+        text-transform: uppercase;
+        color: $color-black;
+        margin-bottom: 3rem;
+    }
+}

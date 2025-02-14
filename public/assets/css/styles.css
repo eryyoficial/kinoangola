@@ -1,0 +1,550 @@
+@charset "UTF-8";
+/*======================================== IMPORTS ======================================== */
+/* TIPO DE LETRA */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* OUTROS */
+/*======================================== FONT FAMILY ======================================== */
+/*======================================== FONT WEIGHT ======================================== */
+/*======================================== FONT SIZE ======================================== */
+/* 16px */
+/* 14px */
+/* 15px */
+/* 20px */
+/* 24px */
+/* 28px */
+/* 32px */
+/* 32px */
+/*======================================== BOX SHADOW ======================================== */
+/*======================================== RADIUS BORDER ======================================== */
+/*======================================== Z-INDEX ======================================== */
+/*======================================== COLORES ======================================== */
+/* GRAY */
+/* WHITE */
+/* BLACK */
+/* PRINCIPAIS */
+/* OTHERS */
+/* KINO CORES EXTRAÍDAS DO LOGO */
+/*======================================== TAGS PRINCIPAIS ======================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", serif;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", serif;
+}
+
+/*======================================== CLASSES PRINCIPAIS ======================================== */
+.btn-p-1 {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #DEBB3B;
+  border-radius: 5px;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+.btn-p-1:hover {
+  opacity: 0.65;
+}
+
+.btn-p-2, .swiper .hero-slide-2 .content .cta .cta-botao-1, header .extras .link-login {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #D90404;
+  border-radius: 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-p-2:hover, .swiper .hero-slide-2 .content .cta .cta-botao-1:hover, header .extras .link-login:hover {
+  scale: 1.03;
+  background-color: #c70000;
+}
+
+.btn-c, .swiper .hero-slide-2 .content .cta .cta-botao-2 {
+  padding: 0.5rem 1rem;
+  outline: 1px solid #858585;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #858585;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-c:hover, .swiper .hero-slide-2 .content .cta .cta-botao-2:hover {
+  color: #FFFFFF;
+  background-color: #858585;
+}
+
+.btn-s {
+  padding: 0.5rem 1rem;
+  border: 1px solid #D90404;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #D90404;
+  transition: 0.4s;
+}
+.btn-s:hover {
+  color: #FFFFFF;
+  background-color: #D90404;
+}
+
+.container, .locais, .services, .destaque {
+  padding: 6rem 12rem;
+}
+.container h2, .locais h2, .services h2, .destaque h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #2a2a2a;
+  margin-bottom: 3rem;
+}
+
+/*======================================== CABEÇALHO ======================================== */
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 88;
+  /* LOGO */
+  /* NAVBAR */
+  /* EXTRAS */
+}
+header .logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #2a2a2a;
+  font-weight: 600;
+}
+header .navbar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+header .navbar .nav-list .nav-link {
+  color: #2a2a2a;
+  transition: 0.4s;
+}
+header .navbar .nav-list .nav-link:hover {
+  color: #D90404;
+}
+header .extras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+header .extras .link-extra {
+  color: #2a2a2a;
+  transition: 0.4s;
+}
+header .extras .link-extra:hover i {
+  transform: translateY(-2px);
+}
+header .extras .link-extra i {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-inline: 0.4rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  transition: 0.4s;
+}
+header .extras .link-extra i:hover {
+  color: #D90404;
+}
+header .extras .link-login {
+  margin-left: 3rem;
+  color: #FFFFFF;
+}
+
+/*======================================== HERO - BANNER EM CARROSSEL ======================================== */
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+.swiper .hero-slide-1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.swiper .hero-slide-1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.swiper .hero-slide-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.swiper .hero-slide-1 .content {
+  position: relative;
+  z-index: 3;
+}
+.swiper .hero-slide-1::before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.swiper .hero-slide-1 img {
+  filter: blur(3px);
+}
+.swiper .hero-slide-1 .content {
+  text-align: center;
+  margin: auto;
+  padding: 1.5rem;
+  width: 800px;
+}
+.swiper .hero-slide-1 .content h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+.swiper .hero-slide-1 .content p {
+  margin-top: 1rem;
+  padding-inline: 3rem;
+  color: #B8B8B8;
+}
+.swiper .hero-slide-1 .content form {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0;
+  transition: 0.4s;
+  margin-top: 2rem;
+  margin-inline: auto;
+  width: 500px;
+  border-radius: 5px;
+}
+.swiper .hero-slide-1 .content form:hover {
+  outline: 2px solid #D90404;
+}
+.swiper .hero-slide-1 .content form button {
+  background-color: #f8f8f8;
+  padding: 0.7rem 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  outline: none;
+}
+.swiper .hero-slide-1 .content form button i {
+  font-weight: 600;
+  color: #D90404;
+}
+.swiper .hero-slide-1 .content form input {
+  flex-grow: 1;
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+}
+.swiper .hero-slide-2 {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 5rem;
+}
+.swiper .hero-slide-2 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.swiper .hero-slide-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.swiper .hero-slide-2 .content {
+  position: relative;
+  z-index: 3;
+}
+.swiper .hero-slide-2::before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.swiper .hero-slide-2 .content {
+  padding: 3rem 3rem 3rem 0;
+}
+.swiper .hero-slide-2 .content .paragrafito {
+  color: #DEBB3B;
+  font-size: 0.875rem;
+}
+.swiper .hero-slide-2 .content h2 {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+.swiper .hero-slide-2 .content .desc {
+  font-size: 1rem;
+  color: #B8B8B8;
+  opacity: 0.9;
+}
+.swiper .hero-slide-2 .content .cta {
+  margin-top: 4rem;
+}
+.swiper .hero-slide-2 .content .cta .cta-botao-1,
+.swiper .hero-slide-2 .content .cta .cta-botao-2 {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+.swiper .hero-slide-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+.swiper .hero-slide-3 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.swiper .hero-slide-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.swiper .hero-slide-3 .content {
+  position: relative;
+  z-index: 3;
+}
+.swiper .hero-slide-3::before {
+  background-color: rgba(0, 0, 0, 0.226);
+}
+.swiper .hero-slide-3 img {
+  filter: blur(2px);
+}
+.swiper .hero-slide-3 .content {
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.swiper .hero-slide-3 .content h1 {
+  color: #FFFFFF;
+  font-size: 3rem;
+}
+.swiper .hero-slide-3 .content p {
+  color: #B8B8B8;
+}
+.swiper .hero-slide-3 .content .btn-p-2, .swiper .hero-slide-3 .content header .extras .link-login, header .extras .swiper .hero-slide-3 .content .link-login, .swiper .hero-slide-3 .hero-slide-2 .content .cta .cta-botao-1, .swiper .hero-slide-2 .hero-slide-3 .content .cta .cta-botao-1 {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.swiper .swiper-pagination-bullet,
+.swiper .swiper-pagination-bullet-active {
+  background-color: #d55c5c;
+}
+
+/*======================================== DESTAQUE DA SEMANA ======================================== */
+.destaque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #FFFFFF;
+}
+.destaque .content {
+  display: grid;
+  grid-template-columns: repeat(2, 450px);
+  gap: 0;
+}
+.destaque .content img {
+  flex-grow: 1;
+}
+.destaque .content .desc {
+  flex-grow: 1;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+.destaque .content .desc h3 {
+  font-size: 3rem;
+  color: #2a2a2a;
+}
+.destaque .content .desc p {
+  font-weight: 200;
+  margin-top: 0.5rem;
+}
+.destaque .content .desc .botoes {
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.destaque .content .desc .botoes .btn-c, .destaque .swiper .hero-slide-2 .content .desc .botoes .cta .cta-botao-2, .swiper .hero-slide-2 .destaque .content .desc .botoes .cta .cta-botao-2, .destaque .swiper .hero-slide-2 .content .cta .desc .botoes .cta-botao-2, .swiper .hero-slide-2 .destaque .content .cta .desc .botoes .cta-botao-2 {
+  margin-left: 0.5rem;
+}
+
+/*======================================== SERVIÇOS ======================================== */
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+.services .content {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  text-align: center;
+  place-items: center;
+  margin: auto;
+  padding: 2rem;
+  gap: 2rem;
+}
+.services .content .service-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 5px;
+  padding: 1.5rem;
+  border: 1px solid #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.services .content .service-card i {
+  font-size: 4rem;
+  color: #D90404;
+}
+.services .content .service-card h3 {
+  color: #464646;
+  font-size: 1rem;
+}
+.services .content .service-card p {
+  color: #858585;
+  font-weight: 300;
+  font-size: 0.813rem;
+}
+
+/*======================================== LOCAIS DE LAZER ======================================== */
+.locais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.locais .content {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 2rem;
+  margin: 1rem 0 4rem;
+}
+.locais .content .link-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.4s;
+}
+.locais .content .link-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.064);
+  z-index: 2;
+}
+.locais .content .link-card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.locais .content .link-card h3 {
+  position: absolute;
+  transform: translateY(100px);
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+.locais .content .link-card h3:hover {
+  text-decoration: underline;
+}
+.locais .content .link-card:hover h3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.locais .content .link-card:hover img {
+  filter: blur(2px);
+}
+.locais .content .btn-p-2, .locais .content header .extras .link-login, header .extras .locais .content .link-login, .locais .swiper .hero-slide-2 .content .cta .cta-botao-1, .swiper .hero-slide-2 .locais .content .cta .cta-botao-1 {
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */

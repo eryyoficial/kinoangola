@@ -1,0 +1,66 @@
+/*======================================== CABEÇALHO ======================================== */
+
+header {
+    @include FlexGrid (3, 1fr);
+    place-items: center;
+    background-color: $color-white;
+    padding: 1rem;
+    box-shadow: $box-shadow;
+    position: sticky;
+    top: 0;
+    z-index: $z-indez-2;
+
+    /* LOGO */
+    .logo-link {
+        @include FlexBox (center, center, row);
+        text-transform: uppercase;
+        font-size: $size-x-large;
+        text-decoration: none;
+        color: $color-black;
+        font-weight: $weight-semibold;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        .nav-list {
+            @include FlexBox (space-between, center, row);
+            gap: 2rem;
+
+            .nav-link {
+                color: $color-black;
+                @include ColorTransition($color-red);
+            }
+        }
+    }
+
+    /* EXTRAS */
+    .extras {
+        @include FlexBox (center, center, row);
+        width: 100%;
+
+        .link-extra {
+            color: $color-black;
+            transition: $transicao;
+
+            &:hover i{
+                transform: translateY(-2px);
+            }
+
+            i {
+                font-size: $size-large;
+                font-weight: $weight-medium;
+                margin-inline: .4rem;
+                border-radius: $radius-around;
+                @include ColorTransition($color-red);
+                transition: $transicao;
+            }
+        }
+
+        .link-login {
+            margin-left: 3rem;
+            color: $color-white;
+            @extend .btn-p-2;
+        }
+    }
+
+}

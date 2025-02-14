@@ -1,0 +1,103 @@
+/*======================================== FONT FAMILY ======================================== */
+$family-body: "Inter", serif;
+$family-title: "Poppins", serif;
+
+/*======================================== FONT WEIGHT ======================================== */
+$weight-extralight: 200;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-medium: 500;
+$weight-semibold: 600;
+$weight-bold: 700;
+$weight-extrabold: 800;
+$weight-black: 800;
+
+/*======================================== FONT SIZE ======================================== */
+$size-base: 1rem;
+/* 16px */
+$size-small: .875rem;
+$size-smallito: .813rem;
+/* 14px */
+$size-smaller: .938rem;
+/* 15px */
+$size-large: 1.25rem;
+/* 20px */
+$size-x-large: 1.5rem;
+/* 24px */
+$size-big: 1.75rem;
+/* 28px */
+$size-biggest: 2rem;
+/* 32px */
+$size-super-biggest: 3rem;
+/* 32px */
+
+/*======================================== BOX SHADOW ======================================== */
+$shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+$shadow-2: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+/*======================================== RADIUS BORDER ======================================== */
+$radius-first: 5px;
+$radius-second: 10px;
+$radius-third: 30px;
+$radius-around: 50%;
+
+/*======================================== Z-INDEX ======================================== */
+$z-indez-1: 99;
+$z-indez-2: 88;
+$z-indez-3: 77;
+$z-indez-4: 66;
+$z-indez-5: 55;
+
+/*======================================== COLORES ======================================== */
+/* GRAY */
+$color-gray-light: #F4F2F2;
+$color-gray-base: #D9D9D9;
+$color-gray-base-2: #D1CFCF;
+$color-gray-dark: #B8B8B8;
+$color-gray-darkness: #858585;
+$color-gray-darkness-2: #6C757D;
+
+/* WHITE */
+$color-white: #FFFFFF;
+$color-white-background: #f8f8f8;
+$color-white-2: #edf2f7;
+$color-white-3: #f2f2f2;
+
+/* BLACK */
+$color-black: #2a2a2a;
+$color-black-2: #353535;
+$color-black-3: #464646;
+
+/* PRINCIPAIS */
+$color-red: #D90404;
+$color-red-light: #d55c5c;
+$color-red-black: #c70000;
+$color-beige-light: #F9E8CC;
+$color-beige-base: #DEBB3B;
+$color-beige-darkness: #DEBB3B;
+
+/* OTHERS */
+$color-green: #00D27A;
+$color-green-light: #D9F8EB;
+$color-green-dark: #00894F;
+$color-orange: #F5803E;
+$color-orange-dark: #AC5A2B;
+$color-orange-light: #FDE6D8;   
+$color-yellow: #E8B209;
+
+
+/* KINO CORES EXTRAÍDAS DO LOGO */
+$kino-color-yellow-dark: #caa933;
+$kino-color-yellow-dark: #DEBB3B;
+$kino-color-red: #F20505;
+$kino-color-red-dark: #b00000;
+$kino-color-white: #F2F2F2;   
+$kino-color-white-light: #FAFAFA;
+$kino-color-black: #303030;   
+$kino-color-black-dark: #212121;
+
+
+$transicao: .4s;
+
+
