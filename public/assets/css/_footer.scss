@@ -1,0 +1,23 @@
+footer {
+    @include FlexBox (space-around, center, column);
+    gap: 4rem;
+    background-color: $color-black;
+    padding: 4rem;
+
+    .content {
+        @include FlexBox (space-around, center, row);
+
+    }
+
+    .separador{
+        height: 1px;
+        width: 100%;
+        background-color: $color-footer-dark;
+        opacity: .65;
+
+    }
+
+    .copy{
+        color: $color-footer-dark;
+    }
+}
