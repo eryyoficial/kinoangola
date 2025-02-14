@@ -548,46 +548,4 @@ header .extras .link-login {
 }
 .locais .content .btn-p-2, .locais .content header .extras .link-login, header .extras .locais .content .link-login, .locais .swiper .hero-slide-2 .content .cta .cta-botao-1, .swiper .hero-slide-2 .locais .content .cta .cta-botao-1 {
   font-weight: 600;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem;
-  background-color: #2a2a2a;
-  padding: 4rem;
-}
-footer .content {
-  display: flex;
-  justify-content: space-around;
-  align-items: space-around;
-  flex-direction: row;
-}
-footer .content .sessao .title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #B8B8B8;
-}
-footer .content .sessao .desc {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-footer .content .sessao .desc a {
-  color: #696969;
-  font-size: 0.938rem;
-  font-weight: 500;
-}
-footer .separador {
-  height: 1px;
-  width: 100%;
-  background-color: #696969;
-  opacity: 0.65;
-}
-footer .copy {
-  color: #696969;
-  font-size: 0.813rem;
 }/*# sourceMappingURL=styles.css.map */
