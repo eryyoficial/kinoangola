@@ -106,13 +106,13 @@ h2 {
   background-color: #D90404;
 }
 
-.container, .food, .empresas, .filtersearch, .descontos-especiais, .locais, .services, .destaque {
+.container, .empresas, .filtersearch, .food, .descontos-especiais, .locais, .services, .destaque {
   padding: 6rem 12rem;
 }
-.container h2, .food h2, .empresas h2, .filtersearch h2, .descontos-especiais h2, .locais h2, .services h2, .destaque h2 {
+.container h2, .empresas h2, .filtersearch h2, .food h2, .descontos-especiais h2, .locais h2, .services h2, .destaque h2 {
   font-size: 2rem;
   text-transform: uppercase;
-  color: #2a2a2a;
+  color: #353535;
   margin-bottom: 3rem;
 }
 
@@ -692,6 +692,11 @@ header .extras .link-login {
   flex-direction: column;
   background-color: #F4F2F2;
 }
+.services h2 {
+  text-transform: none;
+  margin: 0 0 1rem;
+  color: #464646;
+}
 .services .content {
   display: grid;
   grid-template-columns: repeat(3, 300px);
@@ -847,6 +852,94 @@ header .extras .link-login {
 }
 .descontos-especiais .content .btn-p-2, .descontos-especiais .content header .extras .link-login, header .extras .descontos-especiais .content .link-login, .descontos-especiais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .descontos-especiais .content .cta .cta-botao-1 {
   font-size: 0.938rem;
+}
+
+/*======================================== FOOD ======================================== */
+.food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.food h2 {
+  font-size: 1.75rem;
+  text-transform: none;
+}
+.food .content {
+  width: 100%;
+  flex-grow: 1;
+}
+.food .content .FoodSwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  padding: 4rem 1rem 4rem;
+  z-index: 1;
+}
+.food .content .FoodSwiper .swiper-button-prev,
+.food .content .FoodSwiper .swiper-button-next {
+  position: absolute;
+  top: 0%;
+  scale: 0.37;
+  font-weight: 800;
+  color: #B8B8B8;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.4s;
+  z-index: 3;
+}
+.food .content .FoodSwiper .swiper-button-prev:hover,
+.food .content .FoodSwiper .swiper-button-next:hover {
+  background-color: #f8f8f8;
+  scale: 0.4;
+}
+.food .content .FoodSwiper .swiper-button-prev {
+  left: 87.6%;
+  z-index: 3;
+}
+.food .content .FoodSwiper .swiper-button-next {
+  right: 0%;
+}
+.food .content .FoodSwiper .swiper-wrapper {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  place-items: center;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+  padding: 0.7rem;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-pagination-bullet,
+.food .content .FoodSwiper .swiper-pagination-bullet-active {
+  background-color: #d55c5c;
 }
 
 /*======================================== PESQUISA FILTRADA & MAP ======================================== */
@@ -1121,94 +1214,6 @@ header .extras .link-login {
 }
 .empresas .content .EmpresasSwiper .swiper-pagination-bullet,
 .empresas .content .EmpresasSwiper .swiper-pagination-bullet-active {
-  background-color: #d55c5c;
-}
-
-/*======================================== FOOD ======================================== */
-.food {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.food h2 {
-  font-size: 1.75rem;
-  text-transform: none;
-}
-.food .content {
-  width: 100%;
-  flex-grow: 1;
-}
-.food .content .FoodSwiper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  padding: 4rem 1rem 4rem;
-  z-index: 1;
-}
-.food .content .FoodSwiper .swiper-button-prev,
-.food .content .FoodSwiper .swiper-button-next {
-  position: absolute;
-  top: 0%;
-  scale: 0.37;
-  font-weight: 800;
-  color: #B8B8B8;
-  background-color: #FFFFFF;
-  padding: 3rem;
-  border-radius: 50%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  transition: 0.4s;
-  z-index: 3;
-}
-.food .content .FoodSwiper .swiper-button-prev:hover,
-.food .content .FoodSwiper .swiper-button-next:hover {
-  background-color: #f8f8f8;
-  scale: 0.4;
-}
-.food .content .FoodSwiper .swiper-button-prev {
-  left: 87.6%;
-  z-index: 3;
-}
-.food .content .FoodSwiper .swiper-button-next {
-  right: 0%;
-}
-.food .content .FoodSwiper .swiper-wrapper {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
-  place-items: center;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  border-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
-  padding: 0.7rem;
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-pagination-bullet,
-.food .content .FoodSwiper .swiper-pagination-bullet-active {
   background-color: #d55c5c;
 }
 

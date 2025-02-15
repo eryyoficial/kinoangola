@@ -232,6 +232,12 @@
     @include FlexBox (center, center, column);
     background-color: $color-gray-light;
 
+    h2{
+        text-transform: none;
+        margin: 0 0 1rem;
+        color: $color-black-3;
+    }
+
     .content {
         @include FlexGrid (3, 300px);
         text-align: center;
@@ -396,6 +402,98 @@
 
         .btn-p-2 {
             font-size: $size-smaller;
+        }
+    }
+}
+
+
+/*======================================== FOOD ======================================== */
+.food {
+    @include FlexBox (center, center, column);
+    @extend .container;
+
+    h2 {
+        font-size: $size-big;
+        text-transform: none;
+    }
+
+    .content {
+        width: 100%;
+        flex-grow: 1;
+
+        .FoodSwiper {
+            @include FlexBox (center, center, row);
+            position: relative;
+            padding: 4rem 1rem 4rem;
+            z-index: 1;
+
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                position: absolute;
+                top: 0%;
+                scale: .37;
+                font-weight: $weight-extrabold;
+                color: $color-gray-dark;
+                background-color: $color-white;
+                padding: 3rem;
+                border-radius: $radius-around;
+                box-shadow: $shadow-3;
+                transition: $transicao;
+                z-index: 3;
+
+                &:hover {
+                    background-color: $color-white-background;
+                    scale: .4;
+                }
+            }
+
+            .swiper-button-prev {
+                left: 87.6%;
+                z-index: 3;
+            }
+
+            .swiper-button-next {
+                right: 0%;
+            }
+
+            .swiper-wrapper {
+                width: 100%;
+                flex-grow: 1;
+                @include FlexBox (center, center, row);
+
+                .swiper-slide {
+                    @include FlexBox (center, center, row);
+                    gap: 2rem;
+                    place-items: center;
+
+                    .card-pratos {
+                        box-shadow: $shadow-2;
+                        border-radius: $radius-second;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            border-top-left-radius: $radius-second;
+                            border-top-right-radius: $radius-second;
+                        }
+
+                        .info {
+                            @extend .informacoes-cards-vertical;
+                            padding: .7rem;
+                            background-color: $color-white;
+                            border-bottom-left-radius: $radius-second;
+                            border-bottom-right-radius: $radius-second;
+
+                        }
+                    }
+                }
+            }
+
+            .swiper-pagination-bullet,
+            .swiper-pagination-bullet-active {
+                background-color: $color-red-light;
+            }
         }
     }
 }
@@ -699,98 +797,6 @@
                         }
                     }
 
-                }
-            }
-
-            .swiper-pagination-bullet,
-            .swiper-pagination-bullet-active {
-                background-color: $color-red-light;
-            }
-        }
-    }
-}
-
-
-/*======================================== FOOD ======================================== */
-.food {
-    @include FlexBox (center, center, column);
-    @extend .container;
-
-    h2 {
-        font-size: $size-big;
-        text-transform: none;
-    }
-
-    .content {
-        width: 100%;
-        flex-grow: 1;
-
-        .FoodSwiper {
-            @include FlexBox (center, center, row);
-            position: relative;
-            padding: 4rem 1rem 4rem;
-            z-index: 1;
-
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                position: absolute;
-                top: 0%;
-                scale: .37;
-                font-weight: $weight-extrabold;
-                color: $color-gray-dark;
-                background-color: $color-white;
-                padding: 3rem;
-                border-radius: $radius-around;
-                box-shadow: $shadow-3;
-                transition: $transicao;
-                z-index: 3;
-
-                &:hover {
-                    background-color: $color-white-background;
-                    scale: .4;
-                }
-            }
-
-            .swiper-button-prev {
-                left: 87.6%;
-                z-index: 3;
-            }
-
-            .swiper-button-next {
-                right: 0%;
-            }
-
-            .swiper-wrapper {
-                width: 100%;
-                flex-grow: 1;
-                @include FlexBox (center, center, row);
-
-                .swiper-slide {
-                    @include FlexBox (center, center, row);
-                    gap: 2rem;
-                    place-items: center;
-
-                    .card-pratos {
-                        box-shadow: $shadow-2;
-                        border-radius: $radius-second;
-
-                        img {
-                            width: 100%;
-                            object-fit: cover;
-                            border-top-left-radius: $radius-second;
-                            border-top-right-radius: $radius-second;
-                        }
-
-                        .info {
-                            @extend .informacoes-cards-vertical;
-                            padding: .7rem;
-                            background-color: $color-white;
-                            border-bottom-left-radius: $radius-second;
-                            border-bottom-right-radius: $radius-second;
-
-                        }
-                    }
                 }
             }
 
