@@ -746,67 +746,30 @@
 
 /*======================================== EMPRESAS ======================================== */
 .empresas {
-    @include FlexBox (center, center, column);
-    @extend .container;
+    overflow: hidden;
+    padding: 2rem 6rem;
+    
 
-    .content {
-        width: 100%;
-        flex-grow: 1;
+    .content{
+        @include FlexBox(center, center, row);
+        gap: 2rem;
 
-        .EmpresasSwiper {
-            padding: 2rem 0 3rem;
+        .slide{
 
-            .swiper-wrapper {
-                width: 100%;
-                
-
-                .swiper-slide {
-                    text-align: center;
-                    @include FlexBox (center, center, column);
-
-                    .link-img {
-                        @include FlexBox (center, center, row);
-                        width: 130px;
-                        height: 130px;
-                        border-radius: $radius-around;
-                        padding: 2.5rem;
-                        border: none;
-                        box-shadow: $shadow-3;
-                        background-color: $color-white;
-                        margin-bottom: 1rem;
-                        transition: $transicao;
-
-                        img {
-                            transition: $transicao;
-                            width: 120%;
-                        }
-
-                        &:hover img {
-                            scale: 1.1;
-                        }
-                    }
-
-                    .link-title {
-                        font-weight: $weight-semibold;
-                        color: $color-gray-darkness-2;
-                        transition: $transicao;
-                        font-size: $size-base;
-
-                        &:hover {
-                            opacity: .6;
-                        }
-                    }
-
+            a{
+                img{
+                    width: 100px;
+                    padding: 2rem;
+                    background-color: white;
+                    border-radius: $radius-around;
+                    box-shadow: $shadow-3;
                 }
-            }
-
-            .swiper-pagination-bullet,
-            .swiper-pagination-bullet-active {
-                background-color: $color-red-light;
             }
         }
     }
 }
+
+
 
 
 @import './footer';

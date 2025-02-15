@@ -58,7 +58,7 @@ var swiper = new Swiper(".PesquisaSwiper", {
 
 
 /*======================================== EMPRESAS ======================================== */
-var swiper = new Swiper(".EmpresasSwiper", {
+/* var swiper = new Swiper(".EmpresasSwiper", {
     slidesPerView: 5,
     centeredSlides: true,
     spaceBetween: 40,
@@ -89,7 +89,7 @@ document.querySelectorAll('.EmpresasSwiper .swiper-slide').forEach(function (sli
     });
 });
 
-
+ */
 
 /*======================================== FOOD ======================================== */
 var swiper = new Swiper(".FoodSwiper", {
