@@ -1,1 +1,6 @@
 @include BorderTeste();
+
+<h3>Explore Novas Experiências em Luanda</h3>
+                    <p>Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os
+                        melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento.
+                        Com a Kino Angola, suas opções são infinitas.</p>

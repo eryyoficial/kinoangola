@@ -676,6 +676,13 @@ header .extras .link-login {
   font-weight: 200;
   margin-top: 0.5rem;
 }
+.destaque .content .desc p a {
+  color: #696969;
+  transition: 0.4s;
+}
+.destaque .content .desc p a:hover {
+  text-decoration: underline;
+}
 .destaque .content .desc .botoes {
   margin-top: 2rem;
   gap: 2rem;
@@ -823,11 +830,11 @@ header .extras .link-login {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("../images/back (8).png") no-repeat bottom/cover;
+  background: url("../images/food (4).jpg") no-repeat top/cover;
   background-color: rgba(0, 0, 0, 0.442);
   background-blend-mode: darken;
   z-index: 1;
-  filter: blur(2px);
+  filter: blur(3px);
 }
 .descontos-especiais .content {
   position: absolute;
@@ -863,7 +870,8 @@ header .extras .link-login {
 }
 .food h2 {
   font-size: 1.75rem;
-  text-transform: none;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .food .content {
   width: 100%;
@@ -1143,6 +1151,7 @@ header .extras .link-login {
 }
 .filtersearch .search-map {
   width: 500px;
+  height: 400px;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
@@ -1155,20 +1164,16 @@ header .extras .link-login {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F9E8CC;
-}
-.empresas h2 {
-  color: #d55c5c;
 }
 .empresas .content {
   width: 100%;
   flex-grow: 1;
 }
 .empresas .content .EmpresasSwiper {
-  background-color: #FFFFFF;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 5rem 0 6rem;
-  border-radius: 10px;
+  padding: 2rem 0 3rem;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper {
+  width: 100%;
 }
 .empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -1192,10 +1197,6 @@ header .extras .link-login {
   margin-bottom: 1rem;
   transition: 0.4s;
 }
-.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img:hover {
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.4);
-}
 .empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img img {
   transition: 0.4s;
   width: 120%;
@@ -1205,7 +1206,7 @@ header .extras .link-login {
 }
 .empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-title {
   font-weight: 600;
-  color: #464646;
+  color: #6C757D;
   transition: 0.4s;
   font-size: 1rem;
 }

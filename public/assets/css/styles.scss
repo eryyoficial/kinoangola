@@ -211,6 +211,15 @@
             p {
                 font-weight: $weight-extralight;
                 margin-top: 0.5rem;
+
+                a {
+                    color: $color-footer-dark;
+                    transition: $transicao;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
 
             .botoes {
@@ -232,7 +241,7 @@
     @include FlexBox (center, center, column);
     background-color: $color-gray-light;
 
-    h2{
+    h2 {
         text-transform: none;
         margin: 0 0 1rem;
         color: $color-black-3;
@@ -372,11 +381,11 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background: url('../images/back\ \(8\).png') no-repeat bottom/cover;
+        background: url('../images/food\ \(4\).jpg') no-repeat top/cover;
         background-color: rgba(0, 0, 0, 0.442);
         background-blend-mode: darken;
         z-index: 1;
-        filter: blur(2px);
+        filter: blur(3px);
 
     }
 
@@ -414,7 +423,8 @@
 
     h2 {
         font-size: $size-big;
-        text-transform: none;
+        margin-bottom: 1rem;
+        text-align: center;
     }
 
     .content {
@@ -724,6 +734,7 @@
 
     .search-map {
         width: 500px;
+        height: 400px;
         padding: 2rem;
         box-shadow: $shadow-2;
         border-radius: $radius-first;
@@ -737,23 +748,17 @@
 .empresas {
     @include FlexBox (center, center, column);
     @extend .container;
-    background-color: $color-beige-light;
-
-    h2{
-        color: $color-red-light;
-    }
 
     .content {
         width: 100%;
         flex-grow: 1;
 
         .EmpresasSwiper {
-            background-color: $color-white;
-            box-shadow: $shadow-3;
-            padding: 5rem 0 6rem;
-            border-radius: $radius-second;
+            padding: 2rem 0 3rem;
 
             .swiper-wrapper {
+                width: 100%;
+                
 
                 .swiper-slide {
                     text-align: center;
@@ -771,11 +776,6 @@
                         margin-bottom: 1rem;
                         transition: $transicao;
 
-                        &:hover {
-                            background-blend-mode: darken;
-                            background-color: rgba(0, 0, 0, 0.4);
-                        }
-
                         img {
                             transition: $transicao;
                             width: 120%;
@@ -788,7 +788,7 @@
 
                     .link-title {
                         font-weight: $weight-semibold;
-                        color: $color-black-3;
+                        color: $color-gray-darkness-2;
                         transition: $transicao;
                         font-size: $size-base;
 

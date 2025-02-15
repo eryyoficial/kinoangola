@@ -59,15 +59,13 @@ var swiper = new Swiper(".PesquisaSwiper", {
 
 /*======================================== EMPRESAS ======================================== */
 var swiper = new Swiper(".EmpresasSwiper", {
-    watchSlidesProgress: true,
     slidesPerView: 5,
     centeredSlides: true,
-    grabCursor:true,
     spaceBetween: 40,
+    grabCursor:true,
     autoplay: {
         delay: 2000,
-        speed:30000,
-        disableOnInteraction: true,
+        disableOnInteraction: false,
     },
     loop: true,
     navigation: {
@@ -78,13 +76,10 @@ var swiper = new Swiper(".EmpresasSwiper", {
       el: '.swiper-pagination',
       clickable: true,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
 });
+
 document.querySelectorAll('.EmpresasSwiper .swiper-slide').forEach(function (slide) {
-    slide.addEventListener('mouseenter', function () {
+    slide.addEventListener('mouseover', function () {
         swiper.autoplay.stop();
     });
 
