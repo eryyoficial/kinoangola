@@ -1,4 +1,5 @@
-/* HERO SWIPER - BANNER EM CARROSSEL */
+
+/*======================================== HERO - BANNER EM CARROSSEL ======================================== */
 var swiper = new Swiper(".HeroSwiper", {
     grabCursor: true,
     loop: true,
@@ -16,13 +17,16 @@ var swiper = new Swiper(".HeroSwiper", {
 });
 
 
+
+
+/*======================================== PESQUISA FILTRADA & MAP ======================================== */
 var swiper = new Swiper(".PesquisaSwiper", {
     centeredSlides: true,
     spaceBetween: 30,
-    autoplay: {
+    /*autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-    },
+    }, */
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -40,7 +44,46 @@ var swiper = new Swiper(".PesquisaSwiper", {
 });
 
 // Pára o autoplay quando o mouse passar sobre um swiper-slide
-document.querySelectorAll('.PesquisaSwiper .swiper-slide').forEach(function(slide) {
+/* document.querySelectorAll('.PesquisaSwiper .swiper-slide').forEach(function (slide) {
+    slide.addEventListener('mouseenter', function () {
+        swiper.autoplay.stop();
+    });
+
+    // Retoma o autoplay quando o mouse sair do swiper-slide
+    slide.addEventListener('mouseleave', function () {
+        swiper.autoplay.start();
+    });
+}); */
+
+
+
+/*======================================== EMPRESAS ======================================== */
+var swiper = new Swiper(".EmpresasSwiper", {
+    watchSlidesProgress: true,
+    slidesPerView: 5,
+    centeredSlides: true,
+    grabCursor:true,
+    spaceBetween: 40,
+    autoplay: {
+        delay: 2000,
+        speed:30000,
+        disableOnInteraction: true,
+    },
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+document.querySelectorAll('.EmpresasSwiper .swiper-slide').forEach(function (slide) {
     slide.addEventListener('mouseenter', function () {
         swiper.autoplay.stop();
     });
@@ -51,3 +94,21 @@ document.querySelectorAll('.PesquisaSwiper .swiper-slide').forEach(function(slid
     });
 });
 
+
+
+/*======================================== FOOD ======================================== */
+var swiper = new Swiper(".FoodSwiper", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    grabCursor:true,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

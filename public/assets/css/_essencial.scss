@@ -95,3 +95,251 @@ h2 {
         margin-bottom: 3rem;
     }
 }
+
+
+.informacoes-cards-horizontal{
+    
+    @include FlexBox(center, stretch, column);
+    flex-grow: 1;
+
+    .acima {
+        @include FlexBox (space-between, center, row);
+        flex-grow: 1;
+
+        .spans {
+            margin-bottom: .5rem;
+
+            span {
+                font-size: .6rem;
+                font-weight: .6rem;
+                border-radius: $radius-second;
+                padding: .3rem .45rem;
+            }
+
+            .pop {
+                color: rgb(126, 0, 126);
+                background-color: rgb(255, 228, 255);
+            }
+
+            .freeshipping {
+                color: $color-green-dark;
+                background-color: $color-green-light;
+            }
+        }
+
+        .cta {
+            @include FlexBox(space-between, center, row);
+            gap: .35rem;
+
+            .btn-p-2,
+            i {
+                padding: 0.5rem;
+                border-radius: $radius-first;
+            }
+
+            .btn-p-2 {
+                font-size: $size-small;
+
+                &:hover {
+                    scale: 1.02;
+                }
+            }
+
+            i {
+                font-size: $size-base;
+                font-weight: $weight-medium;
+                background-color: $color-green-light;
+                color: $color-green-dark;
+                transition: $transicao;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-green-dark;
+                    color: $color-green-light;
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: $color-black-2;
+        font-size: $size-large;
+        margin-left: .4rem;
+    }
+
+    .description {
+        @include FlexBox(start, center, row);
+        gap: 0.5rem;
+        margin-left: .5rem;
+
+        p {
+            opacity: .7;
+            font-weight: $weight-light;
+            font-size: $size-smallito;
+        }
+
+        .sep {
+            width: 5px;
+            height: 1px;
+            margin-top: .2rem;
+            border-radius: $radius-around;
+            background-color: $color-black-3;
+        }
+    }
+
+    .extras {
+        @include FlexBox (space-between, center, row);
+        width: 100%;
+
+        .avaliacoes {
+            @include FlexBox (start, flex-start, row);
+            margin-top: 1.3rem;
+            margin-left: .4rem;
+            gap: 0;
+            align-self: flex-start;
+
+            i {
+                color: $color-yellow;
+                cursor: pointer;
+                transition: $transicao;
+
+                &:hover {
+                    transform: translateY(-1px);
+                }
+            }
+        }
+
+        .price {
+            align-self: flex-end;
+            font-weight: $weight-bold;
+            font-size: $size-smaller;
+            color: $color-black-3;
+        }
+    }
+}
+.informacoes-cards-vertical{
+    
+    @include FlexBox(center, stretch, column);
+    flex-grow: 1;
+
+    .acima {
+        @include FlexBox (space-between, center, row);
+        flex-grow: 1;
+
+        .spans {
+            margin-bottom: .3rem;
+
+            span {
+                font-size: .65rem;
+                font-weight: .7rem;
+                border-radius: $radius-second;
+                padding: .3rem .45rem;
+            }
+
+            .pop {
+                color: rgb(126, 0, 126);
+                background-color: rgb(255, 228, 255);
+            }
+
+            .freeshipping {
+                color: $color-green-dark;
+                background-color: $color-green-light;
+            }
+        }
+
+        .cta {
+            @include FlexBox(space-between, center, row);
+            gap: .1rem;
+            margin-right: 0;
+
+            .btn-p-2,
+            i {
+                scale: .8;
+                font-size: .8rem;
+                padding: 0.5rem;
+                border-radius: $radius-first;
+            }
+
+            .btn-p-2 {
+                font-weight: $weight-semibold;
+                margin-right: 0;
+
+                &:hover {
+                    scale: .93;
+                }
+            }
+
+            i {
+                font-size: $size-base;
+                font-weight: $weight-medium;
+                background-color: $color-green-light;
+                color: $color-green-dark;
+                transition: $transicao;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-green-dark;
+                    color: $color-green-light;
+                }
+            }
+        }
+    }
+
+    h3 {
+        color: $color-black-2;
+        font-size: $size-large;
+        margin-left: .4rem;
+        margin-top: 0.5rem;
+    }
+
+    .description {
+        @include FlexBox(start, center, row);
+        gap: 0.5rem;
+        margin-left: .5rem;
+
+        p {
+            opacity: .7;
+            font-weight: $weight-light;
+            font-size: $size-smallito;
+        }
+
+        .sep {
+            width: 5px;
+            height: 1px;
+            margin-top: .2rem;
+            border-radius: $radius-around;
+            background-color: $color-black-3;
+        }
+    }
+
+    .extras {
+        @include FlexBox (space-between, center, row);
+        width: 100%;
+        margin-top: 3rem;
+
+        .avaliacoes {
+            @include FlexBox (start, flex-start, row);
+            margin-top: .7rem;
+            margin-left: .4rem;
+            gap: 0;
+            align-self: flex-start;
+
+            i {
+                color: $color-yellow;
+                cursor: pointer;
+                transition: $transicao;
+
+                &:hover {
+                    transform: translateY(-1px);
+                }
+            }
+        }
+
+        .price {
+            align-self: flex-end;
+            font-weight: $weight-bold;
+            font-size: $size-smaller;
+            color: $color-black-3;
+        }
+    }
+}

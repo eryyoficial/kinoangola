@@ -106,14 +106,258 @@ h2 {
   background-color: #D90404;
 }
 
-.container, .filtersearch, .descontos-especiais, .locais, .services, .destaque {
+.container, .food, .empresas, .filtersearch, .descontos-especiais, .locais, .services, .destaque {
   padding: 6rem 12rem;
 }
-.container h2, .filtersearch h2, .descontos-especiais h2, .locais h2, .services h2, .destaque h2 {
+.container h2, .food h2, .empresas h2, .filtersearch h2, .descontos-especiais h2, .locais h2, .services h2, .destaque h2 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #2a2a2a;
   margin-bottom: 3rem;
+}
+
+.informacoes-cards-horizontal, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.informacoes-cards-horizontal .acima, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.informacoes-cards-horizontal .acima .spans, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
+  margin-bottom: 0.5rem;
+}
+.informacoes-cards-horizontal .acima .spans span, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
+  font-size: 0.6rem;
+  font-weight: 0.6rem;
+  border-radius: 10px;
+  padding: 0.3rem 0.45rem;
+}
+.informacoes-cards-horizontal .acima .spans .pop, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
+  color: rgb(126, 0, 126);
+  background-color: rgb(255, 228, 255);
+}
+.informacoes-cards-horizontal .acima .spans .freeshipping, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
+  color: #00894F;
+  background-color: #D9F8EB;
+}
+.informacoes-cards-horizontal .acima .cta, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.35rem;
+}
+.informacoes-cards-horizontal .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-horizontal .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-horizontal .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-horizontal .acima .cta header .extras .link-login, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-horizontal .acima .cta .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login,
+.informacoes-cards-horizontal .acima .cta i,
+.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.informacoes-cards-horizontal .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-horizontal .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-horizontal .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-horizontal .acima .cta header .extras .link-login, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-horizontal .acima .cta .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login {
+  font-size: 0.875rem;
+}
+.informacoes-cards-horizontal .acima .cta .btn-p-2:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .informacoes-cards-horizontal .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .informacoes-cards-horizontal .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .informacoes-cards-horizontal .acima .cta header .extras .link-login:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .informacoes-cards-horizontal .acima .cta .link-login:hover, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login:hover {
+  scale: 1.02;
+}
+.informacoes-cards-horizontal .acima .cta i, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #D9F8EB;
+  color: #00894F;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.informacoes-cards-horizontal .acima .cta i:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
+  background-color: #00894F;
+  color: #D9F8EB;
+}
+.informacoes-cards-horizontal h3, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
+  color: #353535;
+  font-size: 1.25rem;
+  margin-left: 0.4rem;
+}
+.informacoes-cards-horizontal .description, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+.informacoes-cards-horizontal .description p, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 0.813rem;
+}
+.informacoes-cards-horizontal .description .sep, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
+  width: 5px;
+  height: 1px;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  background-color: #464646;
+}
+.informacoes-cards-horizontal .extras, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.informacoes-cards-horizontal .extras .avaliacoes, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 1.3rem;
+  margin-left: 0.4rem;
+  gap: 0;
+  align-self: flex-start;
+}
+.informacoes-cards-horizontal .extras .avaliacoes i, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
+  color: #E8B209;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.informacoes-cards-horizontal .extras .avaliacoes i:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
+  transform: translateY(-1px);
+}
+.informacoes-cards-horizontal .extras .price, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 0.938rem;
+  color: #464646;
+}
+
+.informacoes-cards-vertical, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.informacoes-cards-vertical .acima, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.informacoes-cards-vertical .acima .spans, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
+  margin-bottom: 0.3rem;
+}
+.informacoes-cards-vertical .acima .spans span, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
+  font-size: 0.65rem;
+  font-weight: 0.7rem;
+  border-radius: 10px;
+  padding: 0.3rem 0.45rem;
+}
+.informacoes-cards-vertical .acima .spans .pop, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
+  color: rgb(126, 0, 126);
+  background-color: rgb(255, 228, 255);
+}
+.informacoes-cards-vertical .acima .spans .freeshipping, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
+  color: #00894F;
+  background-color: #D9F8EB;
+}
+.informacoes-cards-vertical .acima .cta, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.1rem;
+  margin-right: 0;
+}
+.informacoes-cards-vertical .acima .cta .btn-p-2, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login,
+.informacoes-cards-vertical .acima .cta i,
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  scale: 0.8;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.informacoes-cards-vertical .acima .cta .btn-p-2, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login {
+  font-weight: 600;
+  margin-right: 0;
+}
+.informacoes-cards-vertical .acima .cta .btn-p-2:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .informacoes-cards-vertical .acima .cta header .extras .link-login:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .informacoes-cards-vertical .acima .cta .link-login:hover, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login:hover {
+  scale: 0.93;
+}
+.informacoes-cards-vertical .acima .cta i, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #D9F8EB;
+  color: #00894F;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.informacoes-cards-vertical .acima .cta i:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
+  background-color: #00894F;
+  color: #D9F8EB;
+}
+.informacoes-cards-vertical h3, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
+  color: #353535;
+  font-size: 1.25rem;
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+}
+.informacoes-cards-vertical .description, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+}
+.informacoes-cards-vertical .description p, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
+  opacity: 0.7;
+  font-weight: 300;
+  font-size: 0.813rem;
+}
+.informacoes-cards-vertical .description .sep, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
+  width: 5px;
+  height: 1px;
+  margin-top: 0.2rem;
+  border-radius: 50%;
+  background-color: #464646;
+}
+.informacoes-cards-vertical .extras, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 3rem;
+}
+.informacoes-cards-vertical .extras .avaliacoes, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 0.7rem;
+  margin-left: 0.4rem;
+  gap: 0;
+  align-self: flex-start;
+}
+.informacoes-cards-vertical .extras .avaliacoes i, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
+  color: #E8B209;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.informacoes-cards-vertical .extras .avaliacoes i:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
+  transform: translateY(-1px);
+}
+.informacoes-cards-vertical .extras .price, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
+  align-self: flex-end;
+  font-weight: 700;
+  font-size: 0.938rem;
+  color: #464646;
 }
 
 /*======================================== CABEÇALHO ======================================== */
@@ -446,7 +690,7 @@ header .extras .link-login {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f8f8f8;
+  background-color: #F4F2F2;
 }
 .services .content {
   display: grid;
@@ -562,7 +806,7 @@ header .extras .link-login {
 /*======================================== DESCONTOS ESPECIAIS ======================================== */
 .descontos-especiais {
   position: relative;
-  height: 300px;
+  height: 400px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   place-items: center;
@@ -605,14 +849,26 @@ header .extras .link-login {
   font-size: 0.938rem;
 }
 
-/*======================================== MAP ======================================== */
+/*======================================== PESQUISA FILTRADA & MAP ======================================== */
 .filtersearch {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: stretch;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #FFFFFF;
   gap: 1rem;
+}
+.filtersearch h2 {
+  width: 100%;
+  flex: 100%;
+  margin: auto;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #003789;
+  padding: 1.5rem;
+  background-color: #d9e8f8;
+  border-radius: 10px;
 }
 .filtersearch .content {
   display: flex;
@@ -780,123 +1036,6 @@ header .extras .link-login {
 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos img:hover {
   scale: 1.02;
 }
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-grow: 1;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
-  margin-bottom: 0.3rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
-  font-size: 0.813rem;
-  font-weight: 0.6rem;
-  border-radius: 10px;
-  padding: 0.3rem 0.45rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
-  color: rgb(126, 0, 126);
-  background-color: rgb(255, 228, 255);
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
-  color: #00894F;
-  background-color: #D9F8EB;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.35rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1,
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
-  padding: 0.5rem;
-  border-radius: 5px;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1 {
-  font-size: 0.875rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .filtersearch .HeroSwiper .hero-slide-2 .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover {
-  scale: 1.02;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #D9F8EB;
-  color: #00894F;
-  transition: 0.4s;
-  cursor: pointer;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
-  background-color: #00894F;
-  color: #D9F8EB;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
-  color: #353535;
-  font-size: 1.5rem;
-  margin-left: 0.4rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  gap: 0.5rem;
-  margin-left: 0.5rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
-  opacity: 0.7;
-  font-weight: 300;
-  font-size: 0.813rem;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
-  width: 5px;
-  height: 1px;
-  margin-top: 0.2rem;
-  border-radius: 50%;
-  background-color: #464646;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
-  display: flex;
-  justify-content: start;
-  align-items: flex-start;
-  flex-direction: row;
-  margin-top: 0.7rem;
-  margin-left: 0.4rem;
-  gap: 0;
-  align-self: flex-start;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
-  color: #E8B209;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
-  transform: translateY(-1px);
-}
-.filtersearch .content .PesquisaSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
-  align-self: flex-end;
-  font-weight: 700;
-  font-size: 0.938rem;
-  color: #464646;
-}
 .filtersearch .content .PesquisaSwiper .swiper-pagination-bullet,
 .filtersearch .content .PesquisaSwiper .swiper-pagination-bullet-active {
   background-color: #d55c5c;
@@ -910,11 +1049,167 @@ header .extras .link-login {
   color: white;
 }
 .filtersearch .search-map {
-  flex: 50%;
+  width: 500px;
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   border-radius: 5px;
   background-color: #f8f8f8;
+}
+
+/*======================================== EMPRESAS ======================================== */
+.empresas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F9E8CC;
+}
+.empresas h2 {
+  color: #d55c5c;
+}
+.empresas .content {
+  width: 100%;
+  flex-grow: 1;
+}
+.empresas .content .EmpresasSwiper {
+  background-color: #FFFFFF;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 5rem 0 6rem;
+  border-radius: 10px;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  padding: 2.5rem;
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: #FFFFFF;
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img:hover {
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img img {
+  transition: 0.4s;
+  width: 120%;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-img:hover img {
+  scale: 1.1;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-title {
+  font-weight: 600;
+  color: #464646;
+  transition: 0.4s;
+  font-size: 1rem;
+}
+.empresas .content .EmpresasSwiper .swiper-wrapper .swiper-slide .link-title:hover {
+  opacity: 0.6;
+}
+.empresas .content .EmpresasSwiper .swiper-pagination-bullet,
+.empresas .content .EmpresasSwiper .swiper-pagination-bullet-active {
+  background-color: #d55c5c;
+}
+
+/*======================================== FOOD ======================================== */
+.food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.food h2 {
+  font-size: 1.75rem;
+  text-transform: none;
+}
+.food .content {
+  width: 100%;
+  flex-grow: 1;
+}
+.food .content .FoodSwiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  padding: 4rem 1rem 4rem;
+  z-index: 1;
+}
+.food .content .FoodSwiper .swiper-button-prev,
+.food .content .FoodSwiper .swiper-button-next {
+  position: absolute;
+  top: 0%;
+  scale: 0.37;
+  font-weight: 800;
+  color: #B8B8B8;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.4s;
+  z-index: 3;
+}
+.food .content .FoodSwiper .swiper-button-prev:hover,
+.food .content .FoodSwiper .swiper-button-next:hover {
+  background-color: #f8f8f8;
+  scale: 0.4;
+}
+.food .content .FoodSwiper .swiper-button-prev {
+  left: 87.6%;
+  z-index: 3;
+}
+.food .content .FoodSwiper .swiper-button-next {
+  right: 0%;
+}
+.food .content .FoodSwiper .swiper-wrapper {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  place-items: center;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+  padding: 0.7rem;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.food .content .FoodSwiper .swiper-pagination-bullet,
+.food .content .FoodSwiper .swiper-pagination-bullet-active {
+  background-color: #d55c5c;
 }
 
 footer {
