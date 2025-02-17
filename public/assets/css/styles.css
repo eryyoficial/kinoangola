@@ -106,10 +106,10 @@ h2 {
   background-color: #D90404;
 }
 
-.container, .filtersearch, .food, .descontos-especiais, .locais, .services, .destaque {
+.container, .descontos-especiais, .food, .locais, .filtersearch, .services, .destaque {
   padding: 6rem 12rem;
 }
-.container h2, .filtersearch h2, .food h2, .descontos-especiais h2, .locais h2, .services h2, .destaque h2 {
+.container h2, .descontos-especiais h2, .food h2, .locais h2, .filtersearch h2, .services h2, .destaque h2 {
   font-size: 2rem;
   text-transform: uppercase;
   color: #353535;
@@ -235,38 +235,38 @@ h2 {
   color: #464646;
 }
 
-.informacoes-cards-vertical, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+.informacoes-cards-vertical, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
   display: flex;
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
   flex-grow: 1;
 }
-.informacoes-cards-vertical .acima, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
+.informacoes-cards-vertical .acima, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-grow: 1;
 }
-.informacoes-cards-vertical .acima .spans, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
+.informacoes-cards-vertical .acima .spans, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans {
   margin-bottom: 0.3rem;
 }
-.informacoes-cards-vertical .acima .spans span, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
+.informacoes-cards-vertical .acima .spans span, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans span {
   font-size: 0.65rem;
   font-weight: 0.7rem;
   border-radius: 10px;
   padding: 0.3rem 0.45rem;
 }
-.informacoes-cards-vertical .acima .spans .pop, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
+.informacoes-cards-vertical .acima .spans .pop, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .pop {
   color: rgb(126, 0, 126);
   background-color: rgb(255, 228, 255);
 }
-.informacoes-cards-vertical .acima .spans .freeshipping, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
+.informacoes-cards-vertical .acima .spans .freeshipping, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .spans .freeshipping {
   color: #00894F;
   background-color: #D9F8EB;
 }
-.informacoes-cards-vertical .acima .cta, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
+.informacoes-cards-vertical .acima .cta, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -274,22 +274,22 @@ h2 {
   gap: 0.1rem;
   margin-right: 0;
 }
-.informacoes-cards-vertical .acima .cta .btn-p-2, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login,
+.informacoes-cards-vertical .acima .cta .btn-p-2, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .HeroSwiper .hero-slide-2 .content .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login,
 .informacoes-cards-vertical .acima .cta i,
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+.food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
   scale: 0.8;
   font-size: 0.8rem;
   padding: 0.5rem;
   border-radius: 5px;
 }
-.informacoes-cards-vertical .acima .cta .btn-p-2, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login {
+.informacoes-cards-vertical .acima .cta .btn-p-2, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .HeroSwiper .hero-slide-2 .content .info .acima .cta .cta-botao-1, .informacoes-cards-vertical .acima .cta header .extras .link-login, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login, header .extras .informacoes-cards-vertical .acima .cta .link-login, header .extras .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login {
   font-weight: 600;
   margin-right: 0;
 }
-.informacoes-cards-vertical .acima .cta .btn-p-2:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .food .HeroSwiper .hero-slide-2 .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .informacoes-cards-vertical .acima .cta header .extras .link-login:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .informacoes-cards-vertical .acima .cta .link-login:hover, header .extras .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login:hover {
+.informacoes-cards-vertical .acima .cta .btn-p-2:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .btn-p-2:hover, .informacoes-cards-vertical .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .informacoes-cards-vertical .acima .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .cta-botao-1:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .HeroSwiper .hero-slide-2 .content .info .acima .cta .cta-botao-1:hover, .informacoes-cards-vertical .acima .cta header .extras .link-login:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta header .extras .link-login:hover, header .extras .informacoes-cards-vertical .acima .cta .link-login:hover, header .extras .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta .link-login:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos header .extras .info .acima .cta .link-login:hover {
   scale: 0.93;
 }
-.informacoes-cards-vertical .acima .cta i, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
+.informacoes-cards-vertical .acima .cta i, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i {
   font-size: 1rem;
   font-weight: 500;
   background-color: #D9F8EB;
@@ -297,17 +297,17 @@ h2 {
   transition: 0.4s;
   cursor: pointer;
 }
-.informacoes-cards-vertical .acima .cta i:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
+.informacoes-cards-vertical .acima .cta i:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .acima .cta i:hover {
   background-color: #00894F;
   color: #D9F8EB;
 }
-.informacoes-cards-vertical h3, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
+.informacoes-cards-vertical h3, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info h3 {
   color: #353535;
   font-size: 1.25rem;
   margin-left: 0.4rem;
   margin-top: 0.5rem;
 }
-.informacoes-cards-vertical .description, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
+.informacoes-cards-vertical .description, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -315,19 +315,19 @@ h2 {
   gap: 0.5rem;
   margin-left: 0.5rem;
 }
-.informacoes-cards-vertical .description p, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
+.informacoes-cards-vertical .description p, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description p {
   opacity: 0.7;
   font-weight: 300;
   font-size: 0.813rem;
 }
-.informacoes-cards-vertical .description .sep, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
+.informacoes-cards-vertical .description .sep, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .description .sep {
   width: 5px;
   height: 1px;
   margin-top: 0.2rem;
   border-radius: 50%;
   background-color: #464646;
 }
-.informacoes-cards-vertical .extras, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
+.informacoes-cards-vertical .extras, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -335,7 +335,7 @@ h2 {
   width: 100%;
   margin-top: 3rem;
 }
-.informacoes-cards-vertical .extras .avaliacoes, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
+.informacoes-cards-vertical .extras .avaliacoes, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes {
   display: flex;
   justify-content: start;
   align-items: flex-start;
@@ -345,15 +345,15 @@ h2 {
   gap: 0;
   align-self: flex-start;
 }
-.informacoes-cards-vertical .extras .avaliacoes i, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
+.informacoes-cards-vertical .extras .avaliacoes i, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i {
   color: #E8B209;
   cursor: pointer;
   transition: 0.4s;
 }
-.informacoes-cards-vertical .extras .avaliacoes i:hover, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
+.informacoes-cards-vertical .extras .avaliacoes i:hover, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .avaliacoes i:hover {
   transform: translateY(-1px);
 }
-.informacoes-cards-vertical .extras .price, .food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
+.informacoes-cards-vertical .extras .price, .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info .extras .price {
   align-self: flex-end;
   font-weight: 700;
   font-size: 0.938rem;
@@ -739,218 +739,6 @@ header .extras .link-login {
   font-size: 0.813rem;
 }
 
-/*======================================== LOCAIS DE LAZER ======================================== */
-.locais {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #FFFFFF;
-}
-.locais .content {
-  display: grid;
-  grid-template-columns: repeat(4, 250px);
-  gap: 2rem;
-  margin: 1rem 0 4rem;
-}
-.locais .content .link-card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-  width: 100%;
-  height: 250px;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  transition: 0.4s;
-}
-.locais .content .link-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.064);
-  z-index: 2;
-}
-.locais .content .link-card img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  z-index: 1;
-  transition: 0.4s;
-}
-.locais .content .link-card h3 {
-  position: absolute;
-  transform: translateY(100px);
-  z-index: 3;
-  opacity: 0;
-  visibility: hidden;
-  color: #FFFFFF;
-  transition: 0.4s;
-}
-.locais .content .link-card h3:hover {
-  text-decoration: underline;
-}
-.locais .content .link-card:hover {
-  scale: 1.03;
-}
-.locais .content .link-card:hover h3 {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
-}
-.locais .content .link-card:hover img {
-  filter: blur(1px);
-}
-.locais .content .btn-p-2, .locais .content header .extras .link-login, header .extras .locais .content .link-login, .locais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .locais .content .cta .cta-botao-1 {
-  font-weight: 600;
-}
-.locais .content .btn-p-2:hover, .locais .content header .extras .link-login:hover, header .extras .locais .content .link-login:hover, .locais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .locais .content .cta .cta-botao-1:hover {
-  outline: 2px solid #D90404;
-  background-color: #FFFFFF;
-  color: #D90404;
-}
-
-/*======================================== DESCONTOS ESPECIAIS ======================================== */
-.descontos-especiais {
-  position: relative;
-  height: 400px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  place-items: center;
-}
-.descontos-especiais::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../images/food (4).jpg") no-repeat top/cover;
-  background-color: rgba(0, 0, 0, 0.442);
-  background-blend-mode: darken;
-  z-index: 1;
-  filter: blur(3px);
-}
-.descontos-especiais .content {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: transparent;
-  padding: 2rem;
-  gap: 1rem;
-  text-align: center;
-  z-index: 2;
-}
-.descontos-especiais .content h3 {
-  font-weight: 700;
-  color: #FFFFFF;
-  font-size: 1.75rem;
-}
-.descontos-especiais .content p {
-  font-weight: 500;
-  color: #B8B8B8;
-}
-.descontos-especiais .content .btn-p-2, .descontos-especiais .content header .extras .link-login, header .extras .descontos-especiais .content .link-login, .descontos-especiais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .descontos-especiais .content .cta .cta-botao-1 {
-  font-size: 0.938rem;
-}
-
-/*======================================== FOOD ======================================== */
-.food {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.food h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-.food .content {
-  width: 100%;
-  flex-grow: 1;
-}
-.food .content .FoodSwiper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  padding: 4rem 1rem 4rem;
-  z-index: 1;
-}
-.food .content .FoodSwiper .swiper-button-prev,
-.food .content .FoodSwiper .swiper-button-next {
-  position: absolute;
-  top: 0%;
-  scale: 0.37;
-  font-weight: 800;
-  color: #B8B8B8;
-  background-color: #FFFFFF;
-  padding: 3rem;
-  border-radius: 50%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  transition: 0.4s;
-  z-index: 3;
-}
-.food .content .FoodSwiper .swiper-button-prev:hover,
-.food .content .FoodSwiper .swiper-button-next:hover {
-  background-color: #f8f8f8;
-  scale: 0.4;
-}
-.food .content .FoodSwiper .swiper-button-prev {
-  left: 87.6%;
-  z-index: 3;
-}
-.food .content .FoodSwiper .swiper-button-next {
-  right: 0%;
-}
-.food .content .FoodSwiper .swiper-wrapper {
-  width: 100%;
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  gap: 2rem;
-  place-items: center;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  border-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
-  padding: 0.7rem;
-  background-color: #FFFFFF;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.food .content .FoodSwiper .swiper-pagination-bullet,
-.food .content .FoodSwiper .swiper-pagination-bullet-active {
-  background-color: #d55c5c;
-}
-
 /*======================================== PESQUISA FILTRADA & MAP ======================================== */
 .filtersearch {
   display: flex;
@@ -1159,24 +947,211 @@ header .extras .link-login {
   background-color: #f8f8f8;
 }
 
+/*======================================== LOCAIS DE LAZER ======================================== */
+.locais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #faf1e2;
+}
+.locais .content {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 2rem;
+  margin: 1rem 0 4rem;
+}
+.locais .content .link-card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: 0.4s;
+}
+.locais .content .link-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.064);
+  z-index: 2;
+}
+.locais .content .link-card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.locais .content .link-card h3 {
+  position: absolute;
+  transform: translateY(100px);
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+.locais .content .link-card h3:hover {
+  text-decoration: underline;
+}
+.locais .content .link-card:hover {
+  scale: 1.03;
+}
+.locais .content .link-card:hover h3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.locais .content .link-card:hover img {
+  filter: blur(1px);
+}
+.locais .content .btn-p-2, .locais .content header .extras .link-login, header .extras .locais .content .link-login, .locais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .locais .content .cta .cta-botao-1 {
+  font-weight: 600;
+}
+.locais .content .btn-p-2:hover, .locais .content header .extras .link-login:hover, header .extras .locais .content .link-login:hover, .locais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .locais .content .cta .cta-botao-1:hover {
+  outline: 2px solid #D90404;
+  background-color: #FFFFFF;
+  color: #D90404;
+}
+
+/*======================================== FOOD ======================================== */
+.food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+.food .FoodSwiper {
+  width: 100%;
+  height: 100%;
+  padding-block: 4rem;
+}
+.food .FoodSwiper .swiper-wrapper .swiper-slide {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+}
+.food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos .info {
+  padding: 0.7rem;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.food .FoodSwiper .swiper-button-prev,
+.food .FoodSwiper .swiper-button-next {
+  position: absolute;
+  top: 0%;
+  scale: 0.4;
+  font-weight: 800;
+  color: #B8B8B8;
+  background-color: #FFFFFF;
+  padding: 3rem;
+  border-radius: 50%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.4s;
+  z-index: 3;
+}
+.food .FoodSwiper .swiper-button-prev:hover,
+.food .FoodSwiper .swiper-button-next:hover {
+  background-color: #f8f8f8;
+  scale: 0.4;
+}
+.food .FoodSwiper .swiper-button-prev {
+  left: -2%;
+}
+.food .FoodSwiper .swiper-button-next {
+  right: 89.6%;
+}
+
+/*======================================== DESCONTOS ESPECIAIS ======================================== */
+.descontos-especiais {
+  position: relative;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+}
+.descontos-especiais::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/food (4).jpg") no-repeat top/cover;
+  background-color: rgba(0, 0, 0, 0.442);
+  background-blend-mode: darken;
+  z-index: 1;
+  filter: blur(1px);
+}
+.descontos-especiais .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 2rem;
+  gap: 1rem;
+  text-align: center;
+  z-index: 2;
+}
+.descontos-especiais .content h3 {
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.75rem;
+}
+.descontos-especiais .content p {
+  font-weight: 500;
+  color: #B8B8B8;
+}
+.descontos-especiais .content .btn-p-2, .descontos-especiais .content header .extras .link-login, header .extras .descontos-especiais .content .link-login, .descontos-especiais .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .descontos-especiais .content .cta .cta-botao-1 {
+  font-size: 0.938rem;
+}
+
 /*======================================== EMPRESAS ======================================== */
-.empresas {
-  overflow: hidden;
+.EmpresasSwiper {
+  width: 100%;
+  height: 100%;
   padding: 2rem 6rem;
 }
-.empresas .content {
+.EmpresasSwiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 2rem;
+  text-align: center;
+  font-size: 18px;
+  padding-block: 6rem;
 }
-.empresas .content .slide a img {
-  width: 100px;
-  padding: 2rem;
-  background-color: white;
+.EmpresasSwiper .swiper-slide a img {
+  width: 150px;
   border-radius: 50%;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 2rem;
+  background-color: #FFFFFF;
 }
 
 footer {

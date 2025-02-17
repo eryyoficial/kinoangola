@@ -4,3 +4,62 @@
                     <p>Descubra novos lugares para explorar em Luanda. Utilize nossa plataforma para encontrar os
                         melhores restaurantes, bares, roulotes e locais de lazer que combinam com seu gosto e orçamento.
                         Com a Kino Angola, suas opções são infinitas.</p>
+
+
+
+ .card-pratos {
+                    box-shadow: $shadow-2;
+                    border-radius: $radius-second;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        border-top-left-radius: $radius-second;
+                        border-top-right-radius: $radius-second;
+                    }
+
+                    .info {
+                        @extend .informacoes-cards-vertical;
+                        padding: .7rem;
+                        background-color: $color-white;
+                        border-bottom-left-radius: $radius-second;
+                        border-bottom-right-radius: $radius-second;
+
+                    }
+                }
+
+
+
+
+
+
+
+                
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 0%;
+            scale: .37;
+            font-weight: $weight-extrabold;
+            color: $color-gray-dark;
+            background-color: $color-white;
+            padding: 3rem;
+            border-radius: $radius-around;
+            box-shadow: $shadow-3;
+            transition: $transicao;
+            z-index: 3;
+
+            &:hover {
+                background-color: $color-white-background;
+                scale: .4;
+            }
+        }
+
+        .swiper-button-prev {
+            left: 87.6%;
+            z-index: 3;
+        }
+
+        .swiper-button-next {
+            right: 0%;
+        }

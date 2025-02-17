@@ -283,232 +283,6 @@
 }
 
 
-/*======================================== LOCAIS DE LAZER ======================================== */
-.locais {
-    @extend .container;
-    @include FlexBox (center, center, column);
-    background-color: $color-white;
-
-    .content {
-        @include FlexGrid (4, 250px);
-        gap: 2rem;
-        margin: 1rem 0 4rem;
-
-        .link-card {
-            position: relative;
-            @include FlexBox (center, center, column);
-            padding: 1rem;
-            width: 100%;
-            height: 250px;
-            border-radius: $radius-first;
-            box-shadow: $shadow-2;
-            transition: $transicao;
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.064);
-                z-index: 2;
-            }
-
-            img {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border-radius: $radius-first;
-                z-index: 1;
-                transition: $transicao;
-            }
-
-            h3 {
-                position: absolute;
-                transform: translateY(100px);
-                z-index: 3;
-                opacity: 0;
-                visibility: hidden;
-                color: $color-white;
-                transition: $transicao;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-
-            &:hover {
-                scale: 1.03;
-            }
-
-            &:hover h3 {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0px);
-            }
-
-            &:hover img {
-                filter: blur(1px);
-            }
-        }
-
-        .btn-p-2 {
-            font-weight: $weight-semibold;
-
-            &:hover {
-                outline: 2px solid $color-red;
-                background-color: $color-white;
-                color: $color-red;
-            }
-        }
-    }
-}
-
-
-/*======================================== DESCONTOS ESPECIAIS ======================================== */
-.descontos-especiais {
-    position: relative;
-    height: 400px;
-    @extend .container;
-    @include FlexGrid(1, 1fr);
-    place-items: center;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: url('../images/food\ \(4\).jpg') no-repeat top/cover;
-        background-color: rgba(0, 0, 0, 0.442);
-        background-blend-mode: darken;
-        z-index: 1;
-        filter: blur(3px);
-
-    }
-
-    .content {
-        position: absolute;
-        @include FlexBox(center, center, column);
-        background-color: transparent;
-        padding: 2rem;
-        gap: 1rem;
-        text-align: center;
-        z-index: 2;
-
-        h3 {
-            font-weight: $weight-bold;
-            color: $color-white;
-            font-size: $size-big;
-        }
-
-        p {
-            font-weight: $weight-medium;
-            color: $color-gray-dark;
-        }
-
-        .btn-p-2 {
-            font-size: $size-smaller;
-        }
-    }
-}
-
-
-/*======================================== FOOD ======================================== */
-.food {
-    @include FlexBox (center, center, column);
-    @extend .container;
-
-    h2 {
-        font-size: $size-big;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-
-    .content {
-        width: 100%;
-        flex-grow: 1;
-
-        .FoodSwiper {
-            @include FlexBox (center, center, row);
-            position: relative;
-            padding: 4rem 1rem 4rem;
-            z-index: 1;
-
-
-            .swiper-button-prev,
-            .swiper-button-next {
-                position: absolute;
-                top: 0%;
-                scale: .37;
-                font-weight: $weight-extrabold;
-                color: $color-gray-dark;
-                background-color: $color-white;
-                padding: 3rem;
-                border-radius: $radius-around;
-                box-shadow: $shadow-3;
-                transition: $transicao;
-                z-index: 3;
-
-                &:hover {
-                    background-color: $color-white-background;
-                    scale: .4;
-                }
-            }
-
-            .swiper-button-prev {
-                left: 87.6%;
-                z-index: 3;
-            }
-
-            .swiper-button-next {
-                right: 0%;
-            }
-
-            .swiper-wrapper {
-                width: 100%;
-                flex-grow: 1;
-                @include FlexBox (center, center, row);
-
-                .swiper-slide {
-                    @include FlexBox (center, center, row);
-                    gap: 2rem;
-                    place-items: center;
-
-                    .card-pratos {
-                        box-shadow: $shadow-2;
-                        border-radius: $radius-second;
-
-                        img {
-                            width: 100%;
-                            object-fit: cover;
-                            border-top-left-radius: $radius-second;
-                            border-top-right-radius: $radius-second;
-                        }
-
-                        .info {
-                            @extend .informacoes-cards-vertical;
-                            padding: .7rem;
-                            background-color: $color-white;
-                            border-bottom-left-radius: $radius-second;
-                            border-bottom-right-radius: $radius-second;
-
-                        }
-                    }
-                }
-            }
-
-            .swiper-pagination-bullet,
-            .swiper-pagination-bullet-active {
-                background-color: $color-red-light;
-            }
-        }
-    }
-}
-
-
 /*======================================== PESQUISA FILTRADA & MAP ======================================== */
 .filtersearch {
     @extend .container;
@@ -744,30 +518,239 @@
 }
 
 
-/*======================================== EMPRESAS ======================================== */
-.empresas {
-    overflow: hidden;
-    padding: 2rem 6rem;
-    
+/*======================================== LOCAIS DE LAZER ======================================== */
+.locais {
+    @extend .container;
+    @include FlexBox (center, center, column);
+    background-color: $color-beige-lighten;
 
-    .content{
-        @include FlexBox(center, center, row);
+    .content {
+        @include FlexGrid (4, 250px);
         gap: 2rem;
+        margin: 1rem 0 4rem;
 
-        .slide{
+        .link-card {
+            position: relative;
+            @include FlexBox (center, center, column);
+            padding: 1rem;
+            width: 100%;
+            height: 250px;
+            border-radius: $radius-first;
+            box-shadow: $shadow-2;
+            transition: $transicao;
 
-            a{
-                img{
-                    width: 100px;
-                    padding: 2rem;
-                    background-color: white;
-                    border-radius: $radius-around;
-                    box-shadow: $shadow-3;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.064);
+                z-index: 2;
+            }
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: $radius-first;
+                z-index: 1;
+                transition: $transicao;
+            }
+
+            h3 {
+                position: absolute;
+                transform: translateY(100px);
+                z-index: 3;
+                opacity: 0;
+                visibility: hidden;
+                color: $color-white;
+                transition: $transicao;
+
+                &:hover {
+                    text-decoration: underline;
                 }
+            }
+
+            &:hover {
+                scale: 1.03;
+            }
+
+            &:hover h3 {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0px);
+            }
+
+            &:hover img {
+                filter: blur(1px);
+            }
+        }
+
+        .btn-p-2 {
+            font-weight: $weight-semibold;
+
+            &:hover {
+                outline: 2px solid $color-red;
+                background-color: $color-white;
+                color: $color-red;
             }
         }
     }
 }
+
+
+/*======================================== FOOD ======================================== */
+.food {
+    @extend .container;
+    @include FlexBox(center, center, column);
+    background-color: $color-white-background;
+
+
+    .FoodSwiper {
+        width: 100%;
+        height: 100%;
+        padding-block: 4rem;
+
+
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                @include FlexGrid(4, 1fr);
+                gap: 2rem;
+
+                .card-pratos {
+                    box-shadow: $shadow-2;
+                    border-radius: $radius-second;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        border-top-left-radius: $radius-second;
+                        border-top-right-radius: $radius-second;
+                    }
+
+                    .info {
+                        @extend .informacoes-cards-vertical;
+                        padding: .7rem;
+                        background-color: $color-white;
+                        border-bottom-left-radius: $radius-second;
+                        border-bottom-right-radius: $radius-second;
+
+                    }
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 0%;
+            scale: .4;
+            font-weight: $weight-extrabold;
+            color: $color-gray-dark;
+            background-color: $color-white;
+            padding: 3rem;
+            border-radius: $radius-around;
+            box-shadow: $shadow-3;
+            transition: $transicao;
+            z-index: 3;
+
+            &:hover {
+                background-color: $color-white-background;
+                scale: .4;
+            }
+        }
+
+        .swiper-button-prev {
+            left: -2%;
+        }
+
+        .swiper-button-next {
+            right: 89.6%;
+        }
+    }
+
+}
+
+
+/*======================================== DESCONTOS ESPECIAIS ======================================== */
+.descontos-especiais {
+    position: relative;
+    height: 400px;
+    @extend .container;
+    @include FlexGrid(1, 1fr);
+    place-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/food\ \(4\).jpg') no-repeat top/cover;
+        background-color: rgba(0, 0, 0, 0.442);
+        background-blend-mode: darken;
+        z-index: 1;
+        filter: blur(1px);
+
+    }
+
+    .content {
+        position: absolute;
+        @include FlexBox(center, center, column);
+        background-color: transparent;
+        padding: 2rem;
+        gap: 1rem;
+        text-align: center;
+        z-index: 2;
+
+        h3 {
+            font-weight: $weight-bold;
+            color: $color-white;
+            font-size: $size-big;
+        }
+
+        p {
+            font-weight: $weight-medium;
+            color: $color-gray-dark;
+        }
+
+        .btn-p-2 {
+            font-size: $size-smaller;
+        }
+    }
+}
+
+
+/*======================================== EMPRESAS ======================================== */
+.EmpresasSwiper {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 6rem;
+
+    .swiper-slide {
+        @include FlexBox (center, center, row);
+        text-align: center;
+        font-size: 18px;
+        padding-block: 6rem;
+
+        a {
+            img {
+                width: 150px;
+                border-radius: $radius-around;
+                box-shadow: $shadow-3;
+                padding: 2rem;
+                background-color: $color-white;
+            }
+        }
+    }
+}
+
+
 
 
 

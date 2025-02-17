@@ -1,6 +1,6 @@
 
 /*======================================== HERO - BANNER EM CARROSSEL ======================================== */
-var swiper = new Swiper(".HeroSwiper", {
+var HeroSwiper = new Swiper(".HeroSwiper", {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
@@ -18,15 +18,14 @@ var swiper = new Swiper(".HeroSwiper", {
 
 
 
-
 /*======================================== PESQUISA FILTRADA & MAP ======================================== */
-var swiper = new Swiper(".PesquisaSwiper", {
+var PesquisaSwiper = new Swiper(".PesquisaSwiper", {
     centeredSlides: true,
     spaceBetween: 30,
-    /*autoplay: {
-        delay: 2500,
+    autoplay: {
+        delay: 9000,
         disableOnInteraction: false,
-    }, */
+    },
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -42,68 +41,62 @@ var swiper = new Swiper(".PesquisaSwiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
-// Pára o autoplay quando o mouse passar sobre um swiper-slide
-/* document.querySelectorAll('.PesquisaSwiper .swiper-slide').forEach(function (slide) {
+document.querySelectorAll('.PesquisaSwiper .swiper-slide').forEach(function (slide) {
     slide.addEventListener('mouseenter', function () {
-        swiper.autoplay.stop();
+        PesquisaSwiper.autoplay.stop();
     });
 
     // Retoma o autoplay quando o mouse sair do swiper-slide
     slide.addEventListener('mouseleave', function () {
-        swiper.autoplay.start();
+        PesquisaSwiper.autoplay.start();
     });
-}); */
+});
+
+
+
+/*======================================== FOOD ======================================== */
+var FoodSwiper = new Swiper(".FoodSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop:true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
 
 /*======================================== EMPRESAS ======================================== */
-/* var swiper = new Swiper(".EmpresasSwiper", {
-    slidesPerView: 5,
-    centeredSlides: true,
-    spaceBetween: 40,
-    grabCursor:true,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-});
-
-document.querySelectorAll('.EmpresasSwiper .swiper-slide').forEach(function (slide) {
-    slide.addEventListener('mouseover', function () {
-        swiper.autoplay.stop();
-    });
-
-    // Retoma o autoplay quando o mouse sair do swiper-slide
-    slide.addEventListener('mouseleave', function () {
-        swiper.autoplay.start();
-    });
-});
-
- */
-
-/*======================================== FOOD ======================================== */
-var swiper = new Swiper(".FoodSwiper", {
+var EmpSwiper = new Swiper(".EmpresasSwiper", {
     slidesPerView: 1,
-    centeredSlides: true,
-    grabCursor:true,
-    spaceBetween: 20,
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    spaceBetween: 10,
+    loop:true,
+    autoplay: {
+        delay:1500,
+        disableOnInteraction:false,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
     },
   });
+  document.querySelectorAll('.EmpresasSwiper .swiper-slide').forEach(slide => {
+    slide.addEventListener('mouseenter', function() {
+        EmpSwiper.autoplay.stop(); // Para a animação ao passar o mouse
+    });
+
+    slide.addEventListener('mouseleave', function() {
+        EmpSwiper.autoplay.start(); // Retoma a animação ao sair o mouse
+    });
+});
