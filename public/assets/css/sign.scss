@@ -1,0 +1,87 @@
+/*======================================== IMPORTS ======================================== */
+/* TIPO DE LETRA */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* OUTROS */
+@import './vars';
+@import './mixins';
+@import './essencial';
+
+.container-sign{
+    height: 100vh;
+    padding: 6rem 12rem;
+    background-color: $color-white;
+    @include FlexBox(space-between, center, row);
+    gap: 3rem;
+
+
+    form {
+        margin: auto;
+        @include FlexBox(start, stretch, column);
+        width: 400px;
+        background-color: $color-gray-blue;
+        box-shadow: $shadow-2;
+        border-radius: $radius-second;
+        padding: 2rem;
+        border: solid 1px $color-gray-light;
+
+        h2 {
+            color: $color-black-2;
+            font-size: $size-big;
+            margin-bottom: 1rem;
+        }
+
+        hr {
+            margin-bottom: 1rem;
+            background-color: $color-gray-light;
+        }
+
+        input {
+            padding: .7rem 1rem;
+            border-radius: $radius-second;
+            margin-bottom: 1rem;
+            border: solid 1px $color-gray-light;
+            width: 100%;
+        }
+
+        .btn-p-2 {
+            font-weight: $weight-semibold;
+
+            &:hover {
+                scale: 1.01;
+            }
+        }
+
+        .lembrar {
+            @include FlexBox(start, center, row);
+            align-self: flex-start;
+            padding: 0;
+
+            input {
+                margin: 0;
+                width: 30px;
+            }
+
+            label {
+                font-size: $size-small;
+            }
+        }
+
+        a {
+            margin-top: 2rem;
+            align-self: center;
+            color: $color-blue-dark;
+            font-size: $size-small;
+            opacity: .6;
+            transition: $transicao;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: .7;
+            }
+        }
+    }
+}
+
+
+

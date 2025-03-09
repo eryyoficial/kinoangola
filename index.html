@@ -9,10 +9,10 @@
 
     <!--==================================== LINKS ====================================-->
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/public/assets/images/logomarca/Kino Logo (1).png" type="image/x-icon">
+    <link rel="shortcut icon" href="public/assets/images/logomarca/Kino Logo (1).png" type="image/x-icon">
 
     <!-- LOCAL CSS LINKS -->
-    <link rel="stylesheet" href="/public/assets/css/styles.css">
+    <link rel="stylesheet" href="public/assets/css/styles.css">
     <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- SWIPER CSS -->
@@ -28,8 +28,8 @@
 <body>
     <!--==================================== CABEÇALHO ==================================== -->
     <header class="cabecalho">
-        <a href="/" class="logo-link">
-            <img src="/public/assets/images/logomarca/Kino Logo (1).png" width="40" height="40" alt="Kino Angola Logo">
+        <a href="index.html" class="logo-link">
+            <img src="public/assets/images/logomarca/Kino Logo (1).png" width="40" height="40" alt="Kino Angola Logo">
             Kino Angola
         </a>
         <nav class="navbar">
@@ -38,7 +38,7 @@
                     <a href="#" class="nav-link">Página Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Explorar</a>
+                    <a href="resources/views/explorar.html" class="nav-link">Explorar</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Parceria</a>
@@ -54,7 +54,7 @@
         <div class="extras">
             <a href="#" class="link-extra"><i class='bx bx-cart-alt'></i></a>
             <a href="#" class="link-extra"><i class='bx bx-user-circle'></i></a>
-            <a href="#" class="link-extra link-login">Entrar</a>
+            <a href="/resources/views/sign.html" class="link-extra link-login">Entrar</a>
         </div>
     </header>
 
@@ -63,7 +63,7 @@
     <section class="swiper HeroSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide hero-slide-1">
-                <img src="/public/assets/images/back (1).png" alt="">
+                <img src="public/assets/images/back (1).png" alt="">
                 <div class="content">
                     <h1>Deixe a fome por novas experiências te guiar</h1>
                     <p>Pesquise por bares, restaurantes, hamburguerias, risorts e muito mais. Encontre o
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="swiper-slide hero-slide-2">
-                <img src="/public/assets/images/back-mesa.jpg" alt="">
+                <img src="public/assets/images/back-mesa.jpg" alt="">
                 <div class="content">
                     <p class="paragrafito">O seu lugar já está garantido!</p>
                     <h2>Reserve Sua Mesa Agora Mesmo</h2>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="swiper-slide hero-slide-3">
-                <img src="/public/assets/images/back-partner-6.jpg" alt="">
+                <img src="public/assets/images/back-partner-6.jpg" alt="">
                 <div class="content">
                     <h1>Torne-se Nosso Parceiro</h1>
                     <p>Tem um Restaurante? Junte-se à <strong>Kino Angola.</strong> Atraia novos clientes todos os dias
@@ -107,7 +107,7 @@
         <section class="destaque">
             <h2>Destaque da Semana</h2>
             <div class="content">
-                <img src="/public/assets/images/qd (14).png" alt="">
+                <img src="public/assets/images/qd (14).png" alt="">
                 <div class="desc">
                     <h3>Camarão frito com molho Soquês</h3>
                     <p>Desfrute deste prato incrivelmente saboroso na <a href="#"><strong>Dombaxi
@@ -147,6 +147,920 @@
         </section>
 
 
+        <!--==================================== FOOD ==================================== -->
+        <section class="food">
+            <h2>Desfruta do melhor que há na culinária angolana</h2>
+            <div class="swiper FoodSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="swiper FoodSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-pratos">
+                            <img src="public/assets/images/qd (13).png" alt="">
+                            <div class="info">
+                                <div class="acima">
+                                    <div class="spans">
+                                        <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                        <span class='freeshipping'>Entrega</span>
+                                    </div>
+                                    <div class="cta">
+                                        <a href="#" class="btn-p-2">Comprar</a>
+                                    </div>
+                                </div>
+                                <h3>Churrasco</h3>
+                                <div class="description">
+                                    <p>La Plaza</p>
+                                    <div class="sep"></div>
+                                    <p>Luanda, Camama</p>
+
+                                </div>
+                                <div class="extras">
+                                    <div class="avaliacoes">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <p class="price">2.000,00 Kz</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </section>
+
+
+        <!--==================================== EMPRESAS ==================================== -->
+        <section class="empresas">
+            <div class="swiper EmpresasSwiper">
+                <h2>Os que dedicam-se, merecem destaque!</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="emp-link"><img src="public/assets/images/businesses/emp (2).png"
+                                alt="businesses"></a>
+                        <h3>Toshi Nala</h3>
+                        <div class="info">
+                            <p>Restaurante,</p>
+                            <p>Luanda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================================== DESCONTOS ESPECIAIS ==================================== -->
+        <section class="descontos-especiais">
+            <div class="content">
+                <h3>Quer Descontos Especiais?</h3>
+                <p>Descubra promoções de restaurantes parceiros e aproveite descontos incríveis.</p>
+                <a href="#" class="btn-p-2">Aproveitar Agora</a>
+            </div>
+        </section>
+
+
         <!--==================================== PESQUISA FILTRADA & MAP ==================================== -->
         <section class="filtersearch">
             <h2>Quem procura, acha!</h2>
@@ -170,7 +1084,7 @@
                         <div class="swiper-slide">
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -203,7 +1117,7 @@
                             </div>
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -236,110 +1150,7 @@
                             </div>
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <i class='bx bx-cart-add'></i>
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <i class='bx bx-cart-add'></i>
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <i class='bx bx-cart-add'></i>
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -376,7 +1187,7 @@
                         <div class="swiper-slide">
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -409,7 +1220,7 @@
                             </div>
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -442,7 +1253,110 @@
                             </div>
 
                             <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
+                                <img src="public/assets/images/qd (13).png" alt="">
+                                <div class="info">
+                                    <div class="acima">
+                                        <div class="spans">
+                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                            <span class='freeshipping'>Entrega</span>
+                                        </div>
+                                        <div class="cta">
+                                            <i class='bx bx-cart-add'></i>
+                                            <a href="#" class="btn-p-2">Comprar</a>
+                                        </div>
+                                    </div>
+                                    <h3>Churrasco</h3>
+                                    <div class="description">
+                                        <p>La Plaza</p>
+                                        <div class="sep"></div>
+                                        <p>Luanda, Camama</p>
+
+                                    </div>
+                                    <div class="extras">
+                                        <div class="avaliacoes">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <p class="price">2.000,00 Kz</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="card-pratos">
+                                <img src="public/assets/images/qd (13).png" alt="">
+                                <div class="info">
+                                    <div class="acima">
+                                        <div class="spans">
+                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                            <span class='freeshipping'>Entrega</span>
+                                        </div>
+                                        <div class="cta">
+                                            <i class='bx bx-cart-add'></i>
+                                            <a href="#" class="btn-p-2">Comprar</a>
+                                        </div>
+                                    </div>
+                                    <h3>Churrasco</h3>
+                                    <div class="description">
+                                        <p>La Plaza</p>
+                                        <div class="sep"></div>
+                                        <p>Luanda, Camama</p>
+
+                                    </div>
+                                    <div class="extras">
+                                        <div class="avaliacoes">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <p class="price">2.000,00 Kz</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-pratos">
+                                <img src="public/assets/images/qd (13).png" alt="">
+                                <div class="info">
+                                    <div class="acima">
+                                        <div class="spans">
+                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
+                                            <span class='freeshipping'>Entrega</span>
+                                        </div>
+                                        <div class="cta">
+                                            <i class='bx bx-cart-add'></i>
+                                            <a href="#" class="btn-p-2">Comprar</a>
+                                        </div>
+                                    </div>
+                                    <h3>Churrasco</h3>
+                                    <div class="description">
+                                        <p>La Plaza</p>
+                                        <div class="sep"></div>
+                                        <p>Luanda, Camama</p>
+
+                                    </div>
+                                    <div class="extras">
+                                        <div class="avaliacoes">
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <p class="price">2.000,00 Kz</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-pratos">
+                                <img src="public/assets/images/qd (13).png" alt="">
                                 <div class="info">
                                     <div class="acima">
                                         <div class="spans">
@@ -489,931 +1403,53 @@
 
         <!--==================================== LOCAIS DE LAZER ==================================== -->
         <section class="locais">
-            <h2>Todo tipo de Lazer</h2>
+            <h2>Toda diversidade gastronômica</h2>
             <div class="content">
                 <a href="#" class="link-card">
-                    <img src="/public/assets/images/qd new (1).png" alt="Roulote">
+                    <img src="public/assets/images/qd new (1).png" alt="Roulote">
                     <h3>Roulotes</h3>
                 </a>
                 <a href="#" class="link-card">
-                    <img src="/public/assets/images/qd (13).png" alt="Churrascarias">
+                    <img src="public/assets/images/qd (13).png" alt="Churrascarias">
                     <h3>Churrascarias</h3>
                 </a>
                 <a href="#" class="link-card">
-                    <img src="/public/assets/images/qd (12).png" alt="Bares">
+                    <img src="public/assets/images/qd (12).png" alt="Bares">
                     <h3>Bares</h3>
                 </a>
                 <a href="#" class="link-card">
-                    <img src="/public/assets/images/qd (11).png" alt="Restaurantes">
+                    <img src="public/assets/images/qd (11).png" alt="Restaurantes">
                     <h3>Restaurantes</h3>
                 </a>
             </div>
             <a href="#" class="btn-p-2">Explorar Mais</a>
         </section>
 
-
-        <!--==================================== FOOD ==================================== -->
-        <section class="food">
-            <h2>Desfruta do melhor que há na culinária angolana</h2>
-                <div class="swiper FoodSwiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-          
-                <div class="swiper FoodSwiper">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="swiper-slide">
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-pratos">
-                                <img src="/public/assets/images/qd (13).png" alt="">
-                                <div class="info">
-                                    <div class="acima">
-                                        <div class="spans">
-                                            <span class='pop'><i class='bx bxs-crown'></i>Popular</span>
-                                            <span class='freeshipping'>Entrega</span>
-                                        </div>
-                                        <div class="cta">
-                                            <a href="#" class="btn-p-2">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <h3>Churrasco</h3>
-                                    <div class="description">
-                                        <p>La Plaza</p>
-                                        <div class="sep"></div>
-                                        <p>Luanda, Camama</p>
-
-                                    </div>
-                                    <div class="extras">
-                                        <div class="avaliacoes">
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                            <i class='bx bxs-star'></i>
-                                        </div>
-                                        <p class="price">2.000,00 Kz</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-          
-        </section>
-
-        <!--==================================== DESCONTOS ESPECIAIS ==================================== -->
-        <section class="descontos-especiais">
+        <section class="cadastro-locais">
             <div class="content">
-                <h3>Quer Descontos Especiais?</h3>
-                <p>Descubra promoções de restaurantes parceiros e aproveite descontos incríveis.</p>
-                <a href="#" class="btn-p-2">Aproveitar Agora</a>
+                <h2>Junta-se à Nossa Plataforma</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quod error dolorum odio dolores
+                    molestiae facilis iste!</p>
+                <br>
+                <p>Explore uma seleção exclusiva de restaurantes, bares e locais de lazer em Luanda. E para você,
+                    empreendedor, encontre o lugar perfeito para o seu <strong>Biolo</strong> aqui na Kino Angola. Inscreva-se agora
+                    mesmo e saiba tudo que podemos proporcionar para si!</p>
             </div>
-        </section>
-
-
-        <!--==================================== EMPRESAS ==================================== -->
-        <section class="empresas">
-            <div class="swiper EmpresasSwiper">
-                <h2>Os que dedicam-se, merecem destaque!</h2>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="#" class="emp-link"><img src="/public/assets/images/businesses/emp (2).png" alt="businesses"></a>
-                        <h3>Toshi Nala</h3>
-                        <div class="info">
-                            <p>Restaurante,</p>
-                            <p>Luanda</p>
-                        </div>
-                    </div>
+            <form action="#">
+                <h3>Registrar-se</h3>
+                <hr>
+                <input type="text" required placeholder="Nome da Empresa">
+                <input type="text" required placeholder="Telefone">
+                <input type="email" required placeholder="E-mail">
+                <input type="password" required placeholder="Senha">
+                <input type="submit" value="Criar Conta" class="btn-p-2">
+                <div class="lembrar">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Lembrar Senha</label>
                 </div>
-            </div>
+
+                <a href="#">Já tenho uma conta</a>
+            </form>
         </section>
 
     </main>
@@ -1423,7 +1459,7 @@
     <footer>
         <div class="content">
             <div class="sessao">
-                <a href="#" class="title">Emprese</a>
+                <a href="#" class="title">Empresa</a>
                 <div class="desc">
                     <a href="#">Nossa História</a>
                     <a href="#">Missão e Visão</a>
@@ -1432,30 +1468,29 @@
                 </div>
             </div>
             <div class="sessao">
-                <a href="#" class="title">Emprese</a>
+                <a href="#" class="title">Ajuda</a>
                 <div class="desc">
-                    <a href="#">Nossa História</a>
-                    <a href="#">Missão e Visão</a>
-                    <a href="#">Equipe</a>
-                    <a href="#">Parceiros</a>
+                    <a href="#">Suporte ao Cliente</a>
+                    <a href="#">Guia de Usuário</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Termo e Privacidade</a>
                 </div>
             </div>
             <div class="sessao">
-                <a href="#" class="title">Emprese</a>
+                <a href="#" class="title">Conecta-se</a>
                 <div class="desc">
-                    <a href="#">Nossa História</a>
-                    <a href="#">Missão e Visão</a>
-                    <a href="#">Equipe</a>
-                    <a href="#">Parceiros</a>
+                    <a href="#">Eventos</a>
+                    <a href="#">Descontos e Promoções</a>
+                    <a href="#"><strong>kinoangolaoficial@gmail.com</strong></a>
                 </div>
             </div>
-            <div class="sessao">
-                <a href="#" class="title">Emprese</a>
+            <div class="newslatter">
+                <h3 class="title">Inscreva a sua empresa</h3>
                 <div class="desc">
-                    <a href="#">Nossa História</a>
-                    <a href="#">Missão e Visão</a>
-                    <a href="#">Equipe</a>
-                    <a href="#">Parceiros</a>
+                    <p>Envie-nos o seu e-mail para que possamos entrar em contato consigo</p>
+                    <form action="#">
+                        <input type="email" required placeholder="E-mail">
+                    </form>
                 </div>
             </div>
         </div>
@@ -1469,7 +1504,7 @@
 
 
     <!-- LOCAL JS -->
-    <script src="/public/assets/js/scripts.js"></script>
+    <script src="public/assets/js/scripts.js"></script>
 </body>
 
 </html>

@@ -133,6 +133,7 @@
 
                 .cta-botao-2 {
                     @extend .btn-c;
+                    margin-left: .3rem;
                 }
             }
         }
@@ -239,7 +240,7 @@
 .services {
     @extend .container;
     @include FlexBox (center, center, column);
-    background-color: $color-gray-light;
+    background-color: $color-white-3;
 
     h2 {
         text-transform: none;
@@ -605,7 +606,7 @@
 .food {
     @extend .container;
     @include FlexBox(center, center, column);
-    background-color: $color-white-background;
+    background-color: $color-white;
 
 
     .FoodSwiper {
@@ -618,11 +619,12 @@
         .swiper-wrapper {
 
             .swiper-slide {
+                padding-inline: 1rem;
                 @include FlexGrid(4, 1fr);
                 gap: 2rem;
 
                 .card-pratos {
-                    box-shadow: $shadow-2;
+                    box-shadow: $shadow-3;
                     border-radius: $radius-second;
 
                     img {
@@ -725,18 +727,110 @@
     }
 }
 
+/*======================================== CADASTRO ======================================== */
+.cadastro-locais {
+    padding: 6rem 12rem;
+    background-color: $color-white;
+    @include FlexBox(space-between, center, row);
+    gap: 3rem;
+
+    .content {
+        @include FlexBox(start, center, column);
+        width: 500px;
+
+        h2 {
+            color: $color-black;
+            font-size: $size-super-biggest;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: $size-base;
+            color: $color-black-3;
+            font-weight: $weight-light;
+        }
+
+    }
+
+    form {
+        @include FlexBox(start, stretch, column);
+        width: 400px;
+        background-color: $color-gray-blue;
+        box-shadow: $shadow-2;
+        border-radius: $radius-second;
+        padding: 2rem;
+        border: solid 1px $color-gray-light;
+
+        h3 {
+            color: $color-black-2;
+            font-size: $size-big;
+            margin-bottom: 1.5rem;
+        }
+
+        hr {
+            margin-bottom: 1rem;
+            background-color: $color-gray-light;
+        }
+
+        input {
+            padding: .7rem 1rem;
+            border-radius: $radius-second;
+            margin-bottom: 1rem;
+            border: solid 1px $color-gray-light;
+            width: 100%;
+        }
+
+        .btn-p-2 {
+            font-weight: $weight-semibold;
+
+            &:hover {
+                scale: 1.01;
+            }
+        }
+
+        .lembrar {
+            @include FlexBox(start, center, row);
+            align-self: flex-start;
+            padding: 0;
+
+            input {
+                margin: 0;
+                width: 30px;
+            }
+
+            label {
+                font-size: $size-small;
+            }
+        }
+
+        a {
+            margin-top: 2rem;
+            align-self: center;
+            color: $color-blue-dark;
+            font-size: $size-small;
+            opacity: .6;
+            transition: $transicao;
+
+            &:hover {
+                text-decoration: underline;
+                opacity: .7;
+            }
+        }
+    }
+}
+
 
 /*======================================== EMPRESAS ======================================== */
 .EmpresasSwiper {
     width: 100%;
     height: 100%;
     padding: 2rem 6rem;
-    background-color: $color-beige-lighten;
-    
-    h2{
+    background-color: $color-white-2;
+
+    h2 {
         text-align: center;
         align-self: center;
-        margin-top: 3rem;
+        margin-top: 4rem;
         color: $color-black-2;
         text-transform: uppercase;
     }
@@ -757,14 +851,15 @@
                 background-color: $color-white;
             }
         }
-        h3{
+
+        h3 {
             font-size: $size-large;
         }
 
-        .info{
+        .info {
             @include FlexBox(center, center, row);
-            
-            p{
+
+            p {
                 font-size: $size-smallito;
                 font-weight: $weight-light;
             }

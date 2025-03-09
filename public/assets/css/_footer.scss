@@ -1,30 +1,59 @@
 footer {
     @include FlexBox (center, center, column);
     gap: 2rem;
-    background-color: $color-black;
-    padding: 4rem;
+    background-color: $kino-color-black-dark;
+    padding: 4rem 4rem 2rem;
 
     .content {
         width: 100%;
         @include FlexGrid (4, 1fr);
-        border: solid red;
 
         .sessao {
-
-
             .title {
+                padding-top: 2rem;
                 font-size: $size-base;
                 font-weight: $weight-semibold;
-                color: $color-gray-dark;
+                color: $color-white;
             }
 
             .desc {
+                gap: .5rem;
+                margin-top: .5rem;
                 @include FlexBox (start, flex-start, column);
                 a {
-                    color:$color-footer-dark;
+                    color:$kino-color-gray;
                     font-size: $size-smaller;
-                    font-weight: $weight-medium;
+                    opacity: .8;
+                    
+                    &:hover{
+                        opacity: 1;
+                    }
                 }
+            }
+        }
+    }
+
+    .newslatter{
+        h3{
+            font-size: $size-big;
+            font-weight: $weight-semibold;
+            color: $color-white;
+        }
+
+        .desc {
+            gap: 1rem;
+            margin-top: .5rem;
+            @include FlexBox (start, stretch, column);
+            p {
+                font-size: $size-small;
+                color: $kino-color-gray;
+            }
+
+            input{
+                width: 100%;
+                padding: .7rem;
+                border-radius: $radius-second;
+                border: none;
             }
         }
     }
@@ -33,12 +62,13 @@ footer {
         height: 1px;
         width: 100%;
         background-color: $color-footer-dark;
-        opacity: .65;
+        opacity: .5;
 
     }
 
     .copy {
-        color: $color-footer-dark;
+        color: $kino-color-gray;
         font-size: $size-smallito;
+        opacity: .75;
     }
 }

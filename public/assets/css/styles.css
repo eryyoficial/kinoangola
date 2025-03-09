@@ -580,6 +580,9 @@ header .extras .link-login {
   font-size: 0.938rem;
   font-weight: 500;
 }
+.HeroSwiper .hero-slide-2 .content .cta .cta-botao-2 {
+  margin-left: 0.3rem;
+}
 .HeroSwiper .hero-slide-3 {
   position: relative;
   display: flex;
@@ -698,7 +701,7 @@ header .extras .link-login {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #F4F2F2;
+  background-color: #f2f2f2;
 }
 .services h2 {
   text-transform: none;
@@ -1030,7 +1033,7 @@ header .extras .link-login {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f8f8f8;
+  background-color: #FFFFFF;
 }
 .food .FoodSwiper {
   width: 100%;
@@ -1038,12 +1041,13 @@ header .extras .link-login {
   padding-block: 4rem;
 }
 .food .FoodSwiper .swiper-wrapper .swiper-slide {
+  padding-inline: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   border-radius: 10px;
 }
 .food .FoodSwiper .swiper-wrapper .swiper-slide .card-pratos img {
@@ -1131,17 +1135,106 @@ header .extras .link-login {
   font-size: 0.938rem;
 }
 
+/*======================================== CADASTRO ======================================== */
+.cadastro-locais {
+  padding: 6rem 12rem;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+.cadastro-locais .content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+}
+.cadastro-locais .content h2 {
+  color: #2a2a2a;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.cadastro-locais .content p {
+  font-size: 1rem;
+  color: #464646;
+  font-weight: 300;
+}
+.cadastro-locais form {
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
+  width: 400px;
+  background-color: #F8F9FA;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  border-radius: 10px;
+  padding: 2rem;
+  border: solid 1px #F4F2F2;
+}
+.cadastro-locais form h3 {
+  color: #353535;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+.cadastro-locais form hr {
+  margin-bottom: 1rem;
+  background-color: #F4F2F2;
+}
+.cadastro-locais form input {
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: solid 1px #F4F2F2;
+  width: 100%;
+}
+.cadastro-locais form .btn-p-2, .cadastro-locais form header .extras .link-login, header .extras .cadastro-locais form .link-login, .cadastro-locais form .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1, .HeroSwiper .hero-slide-2 .content .cta .cadastro-locais form .cta-botao-1 {
+  font-weight: 600;
+}
+.cadastro-locais form .btn-p-2:hover, .cadastro-locais form header .extras .link-login:hover, header .extras .cadastro-locais form .link-login:hover, .cadastro-locais form .HeroSwiper .hero-slide-2 .content .cta .cta-botao-1:hover, .HeroSwiper .hero-slide-2 .content .cta .cadastro-locais form .cta-botao-1:hover {
+  scale: 1.01;
+}
+.cadastro-locais form .lembrar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  align-self: flex-start;
+  padding: 0;
+}
+.cadastro-locais form .lembrar input {
+  margin: 0;
+  width: 30px;
+}
+.cadastro-locais form .lembrar label {
+  font-size: 0.875rem;
+}
+.cadastro-locais form a {
+  margin-top: 2rem;
+  align-self: center;
+  color: #003789;
+  font-size: 0.875rem;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+.cadastro-locais form a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
 /*======================================== EMPRESAS ======================================== */
 .EmpresasSwiper {
   width: 100%;
   height: 100%;
   padding: 2rem 6rem;
-  background-color: #faf1e2;
+  background-color: #edf2f7;
 }
 .EmpresasSwiper h2 {
   text-align: center;
   align-self: center;
-  margin-top: 3rem;
+  margin-top: 4rem;
   color: #353535;
   text-transform: uppercase;
 }
@@ -1182,38 +1275,67 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: #2a2a2a;
-  padding: 4rem;
+  background-color: #212529;
+  padding: 4rem 4rem 2rem;
 }
 footer .content {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: solid red;
 }
 footer .content .sessao .title {
+  padding-top: 2rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #B8B8B8;
+  color: #FFFFFF;
 }
 footer .content .sessao .desc {
+  gap: 0.5rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: start;
   align-items: flex-start;
   flex-direction: column;
 }
 footer .content .sessao .desc a {
-  color: #696969;
+  color: #909294;
   font-size: 0.938rem;
-  font-weight: 500;
+  opacity: 0.8;
+}
+footer .content .sessao .desc a:hover {
+  opacity: 1;
+}
+footer .newslatter h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+footer .newslatter .desc {
+  gap: 1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: stretch;
+  flex-direction: column;
+}
+footer .newslatter .desc p {
+  font-size: 0.875rem;
+  color: #909294;
+}
+footer .newslatter .desc input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  border: none;
 }
 footer .separador {
   height: 1px;
   width: 100%;
   background-color: #696969;
-  opacity: 0.65;
+  opacity: 0.5;
 }
 footer .copy {
-  color: #696969;
+  color: #909294;
   font-size: 0.813rem;
+  opacity: 0.75;
 }/*# sourceMappingURL=styles.css.map */
