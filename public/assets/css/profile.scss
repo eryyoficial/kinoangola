@@ -107,10 +107,8 @@
 
 aside {
     border-radius: $radius-second;
-    width: 350px;
-    overflow-y: scroll;
-    background-color: $color-white;
-    box-shadow: $shadow-3;
+    width: 300px;
+    /* overflow-y: scroll; */
 
 
     .menu{
@@ -254,14 +252,22 @@ main {
         margin: 10px 0;
         padding: 10px;
         width: 100%;
+        border-radius: $radius-second;
+        border: solid 1px $color-gray-darkness;
+    }
+
+    textarea{
+        height: 200px;
     }
     
     button {
-        padding: 10px;
-        background: #333;
-        color: white;
-        border: none;
+        @extend .btn-p-2;
         cursor: pointer;
+        font-weight: 400;
+
+        &:hover{
+            scale: 1.004;
+        }
     }
     
     
