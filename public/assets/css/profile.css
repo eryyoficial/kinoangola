@@ -79,6 +79,19 @@ h2 {
   background-color: #c70000;
 }
 
+.btn-p-3, .perfil-business .cover-perfil .change-cover-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: #D90404;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn-p-3:hover, .perfil-business .cover-perfil .change-cover-btn:hover {
+  scale: 1.02;
+}
+
 .btn-c {
   padding: 0.5rem 1rem;
   outline: 1px solid #858585;
@@ -451,20 +464,12 @@ header .extras .link-login {
      object-fit: cover;
 }
 
-.perfil-business .change-cover-btn {
+.perfil-business .cover-perfil .change-cover-btn {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #1877f2;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.perfil-business .change-cover-btn:hover {
-  background-color: #145db5;
+  font-weight: 500;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .perfil-business .profile-photo-container {
@@ -493,7 +498,7 @@ header .extras .link-login {
   bottom: -5px;
   right: 5px;
   background-color: rgba(0, 0, 0, 0.828);
-  opacity: 0.7;
+  opacity: 0.65;
   transition: 0.4s;
   color: white;
   padding: 6px 10px;

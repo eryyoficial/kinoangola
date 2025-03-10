@@ -55,6 +55,20 @@ h2 {
     }
 }
 
+.btn-p-3 {
+    padding: .5rem 1rem;
+    border: none;
+    background-color: $color-white;
+    border-radius: $radius-first;
+    color: $color-red;
+    cursor: pointer;
+    transition: $transicao;
+
+    &:hover {
+        scale: 1.02;
+    }
+}
+
 .btn-c {
     padding: .5rem 1rem;
     outline: 1px solid $color-gray-darkness;
