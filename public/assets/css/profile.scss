@@ -100,19 +100,74 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    justify-content: space-between;
+    padding: 3rem;
+    gap: 2.5rem;
 }
 
 aside {
+    border-radius: $radius-second;
     width: 350px;
-    height: 100vh;
-    background-color: #145db5;
+    overflow-y: scroll;
+    background-color: $color-white;
+    box-shadow: $shadow-3;
+
+
+    .menu{
+        height: 100%;
+
+        h2{
+            margin: 1.5rem 1.5rem .5rem;
+            color: $color-black-3;
+        }
+        
+
+        li{
+            display: flex;
+            flex-direction: row;
+            justify-content: stretch;
+            align-items: stretch;
+            cursor: pointer;
+
+            a{
+                width: 100%;
+                padding: .8rem .8rem .8rem 2rem;
+                color: $color-gray-darkness;
+                transition: .4s;
+
+                &:hover{
+                    background-color: $color-white-2;
+                }
+            }
+        }
+    }
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Safari, Edge) */
+aside::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal (se necessário) */
+}
+
+aside::-webkit-scrollbar-track {
+    background-color: #e0e0e0; /* Cor do fundo da trilha da rolagem */
+    border-radius: 10px; /* Bordas arredondadas da trilha */
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #808080; /* Cor da parte da barra que se move */
+    border-radius: 10px; /* Bordas arredondadas do "polegar" (parte móvel) */
+    border: 3px solid #f4f4f4; /* Borda para dar um efeito de "profundidade" */
+}
+/* Para Firefox */
+aside {
+    scrollbar-width: thin; /* Largura da barra de rolagem */
+    scrollbar-color: #808080 #e0e0e0; /* Cor do thumb e da trilha */
 }
 
 
 main {
-    padding: 2rem;
     width: 100%;
-
 
     .cover-photo img {
         width: 100%;
@@ -137,27 +192,10 @@ main {
         border-radius: 50%;
     }
     
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        background: #333;
-        text-align: center;
-    }
-    
-    .menu ul li {
-        display: inline;
-        padding: 15px;
-    }
-    
-    .menu ul li a {
-        color: white;
-        text-decoration: none;
-    }
-    
     .section {
         padding: 20px;
+        margin-bottom: 2rem;
         background: white;
-        margin: 20px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
