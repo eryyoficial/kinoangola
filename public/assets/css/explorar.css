@@ -392,6 +392,9 @@ header {
   /* NAVBAR */
   /* EXTRAS */
 }
+header .burguer {
+  display: none;
+}
 header .logo-link {
   display: flex;
   justify-content: center;
@@ -402,6 +405,10 @@ header .logo-link {
   text-decoration: none;
   color: #2a2a2a;
   font-weight: 600;
+}
+header .navbar {
+  width: 500px;
+  border: solid red;
 }
 header .navbar .nav-list {
   display: flex;
@@ -422,7 +429,6 @@ header .extras {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
 }
 header .extras .link-extra {
   color: #2a2a2a;
@@ -447,6 +453,31 @@ header .extras .link-login {
   color: #FFFFFF;
 }
 
+@media (max-width: 1150px) {
+  header {
+    position: relative;
+  }
+  header .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header .navbar .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  header .extras {
+    position: absolute;
+    margin-top: 2rem;
+    right: 0;
+  }
+  header .burguer {
+    display: block;
+  }
+}
 .hero {
   padding: 6rem 12rem;
   display: grid;

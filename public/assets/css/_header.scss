@@ -10,6 +10,10 @@ header {
     top: 0;
     z-index: $z-indez-2;
 
+    .burguer{
+        display: none;
+    }
+
     /* LOGO */
     .logo-link {
         @include FlexBox (center, center, row);
@@ -22,6 +26,8 @@ header {
 
     /* NAVBAR */
     .navbar {
+        width: 500px;
+        @include BorderTeste();
         .nav-list {
             @include FlexBox (space-between, center, row);
             gap: 2rem;
@@ -36,7 +42,6 @@ header {
     /* EXTRAS */
     .extras {
         @include FlexBox (center, center, row);
-        width: 100%;
 
         .link-extra {
             color: $color-black;
@@ -63,4 +68,29 @@ header {
         }
     }
 
+}
+
+
+@media (max-width: 1150px) {
+   
+    header{
+        position: relative;
+        .navbar{
+            position: absolute;
+            top: 0;
+            right: 0;
+            .nav-list {
+                @include FlexBox (space-between, center, row);
+                gap: 2rem;}
+        }
+        .extras{
+            position: absolute;
+            margin-top: 2rem;
+            right: 0;
+        }
+        .burguer{
+            display: block;
+        }
+
+    }
 }
