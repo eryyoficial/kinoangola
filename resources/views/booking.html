@@ -60,17 +60,22 @@
             background: red;
             border: none;
             color: white;
-            padding: 10px 15px;
+            padding: 8px 15px;
             border-radius: 5px;
             cursor: pointer;
         }
         .favorito i{
             position: absolute;
-            right: 7px;
-            top: 7px;
+            right: 6px;
+            top: 6px;
             color: red;
             font-size: 1.5rem;
             cursor: pointer;
+            transition: .4s;
+        }
+
+        .favorito i:hover{
+            scale: 1.02;
         }
         .resumo-reservas {
             flex: 1;
@@ -131,9 +136,9 @@
         <div class="reservas">
             <h2>Locais Disponíveis para Reserva</h2>
             <div class="reserva-item">
-                <img src="../../public/assets/images/qd (10).png" alt="Restaurante A">
+                <img src="../../public/assets/images/qd (11).png" alt="Restaurante A">
                 <div>
-                    <p><strong>Restaurante A</strong></p>
+                    <p><strong>Restaurante 3A's</strong></p>
                     <p>Avaliação: ⭐⭐⭐⭐</p>
                     <p>Preço: Kz 10.000</p>
                     <p>Cadeiras: 4</p>
@@ -142,11 +147,11 @@
                 <span class="favorito"><i class='bx bx-heart' ></i></span>
             </div>
             <div class="reserva-item">
-                <img src="../../public/assets/images/qd (10).png" alt="Bar B">
+                <img src="../../public/assets/images/qd (20).png" alt="Bar B">
                 <div>
-                    <p><strong>Bar B</strong></p>
-                    <p>Avaliação: ⭐⭐⭐⭐⭐</p>
-                    <p>Preço: Kz 8.000</p>
+                    <p><strong>Bar da Belucha</strong></p>
+                    <p>Avaliação: ⭐⭐⭐</p>
+                    <p>Preço: Kz 4.000</p>
                     <p>Cadeiras: 2</p>
                 </div>
                 <button>Reservar</button>
