@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kino Angola</title>
+
+
+    <!--==================================== LINKS ====================================-->
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../../public/assets/images/logomarca/Kino Logo (1).png" type="image/x-icon">
+
+    <!-- LOCAL CSS LINKS -->
+    <link rel="stylesheet" href="../../public/assets/css/partners.css">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff7b00;
+        }
+        .benefits, .testimonials, .signup {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .benefit-item, .testimonial-item {
+            flex: 1 1 300px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #ff7b00;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e06b00;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!--==================================== CABEÇALHO ==================================== -->
+    <header class="cabecalho">
+        <a href="/" class="logo-link">
+            <img src="../../public/assets/images/logomarca/Kino Logo (1).png" width="40" height="40" alt="Kino Angola Logo">
+            Kino Angola
+        </a>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="../../index.html" class="nav-link">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a href="explorar.html" class="nav-link">Explorar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Parceria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Why Kino?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="extras">
+            <a href="#" class="link-extra"><i class='bx bx-cart-alt'></i></a>
+            <a href="profile.html" class="link-extra"><i class='bx bx-user-circle'></i></a>
+            <a href="sign.html" class="link-extra link-login">Entrar</a>
+        </div>
+    </header>
+
+<main>
+        
+    <section id="benefits">
+        <h2>Vantagens de ser um parceiro</h2>
+        <div class="benefit-item">📈 Maior visibilidade no mercado</div>
+        <div class="benefit-item">🎯 Alcance clientes ideais com precisão</div>
+        <div class="benefit-item">💼 Ferramentas de gestão avançadas</div>
+        <div class="benefit-item">🤝 Suporte especializado e dedicado</div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>O que nossos parceiros dizem</h2>
+        <blockquote>“Desde que entramos para a Kino Angola, nosso faturamento aumentou 40%!" – Restaurante X</blockquote>
+        <blockquote>“A plataforma facilitou a gestão dos nossos pedidos e clientes.” – Café Y</blockquote>
+    </section>
+    
+    <section id="signup">
+        <h2>Cadastre seu estabelecimento</h2>
+        <form id="signup-form">
+            <label for="name">Nome do Estabelecimento:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" required>
+            
+            <button type="submit">Quero ser parceiro</button>
+        </form>
+    </section>
+</main>
+
+    
+    <!--==================================== RODAPÉ ==================================== -->
+    <footer>
+        <div class="content">
+            <div class="sessao">
+                <a href="#" class="title">Empresa</a>
+                <div class="desc">
+                    <a href="#">Nossa História</a>
+                    <a href="#">Missão e Visão</a>
+                    <a href="#">Equipe</a>
+                    <a href="#">Parceiros</a>
+                </div>
+            </div>
+            <div class="sessao">
+                <a href="#" class="title">Ajuda</a>
+                <div class="desc">
+                    <a href="#">Suporte ao Cliente</a>
+                    <a href="#">Guia de Usuário</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Termo e Privacidade</a>
+                </div>
+            </div>
+            <div class="sessao">
+                <a href="#" class="title">Conecta-se</a>
+                <div class="desc">
+                    <a href="#">Eventos</a>
+                    <a href="#">Descontos e Promoções</a>
+                    <a href="#"><strong>kinoangolaoficial@gmail.com</strong></a>
+                    <div class="social-links">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="newslatter">
+                <h3 class="title">Inscreva a sua empresa</h3>
+                <div class="desc">
+                    <p>Envie-nos o seu e-mail para que possamos entrar em contato consigo</p>
+                    <form action="#">
+                        <input type="email" required placeholder="E-mail">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="separador"></div>
+        <p class="copy">&copy; 2025 <strong>Kino Angola</strong> ▪️ Todos os direitos reservador.</p>
+    </footer>
+
+    <!--==================================== SCRIPTS ==================================== -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- LOCAL JS -->
+    <script src="../../public/assets/js/scripts.js"></script>
+</body>
+
+</html>
