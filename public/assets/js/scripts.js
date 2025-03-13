@@ -100,3 +100,22 @@ var EmpSwiper = new Swiper(".EmpresasSwiper", {
         EmpSwiper.autoplay.start(); // Retoma a animação ao sair o mouse
     });
 });
+
+
+
+var swiper = new Swiper(".testimonials-partners", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
