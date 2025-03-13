@@ -28,31 +28,83 @@
             border-radius: 8px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+
+        h1 {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 2rem;
             color: #ff7b00;
+            margin-bottom: 6rem;
         }
-        .benefits, .testimonials, .signup {
+
+        .benefits,
+        .testimonials,
+        .signup {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
         }
-        .benefit-item, .testimonial-item {
+
+        .benefit-item,
+        .testimonial-item {
             flex: 1 1 300px;
             padding: 20px;
-            background: #f1f1f1;
-            border-radius: 8px;
+            /* border-radius: 8px; */
             text-align: center;
         }
+
+        .benefit-item {
+            padding-inline: 4rem;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10rem;
+        }
+
+        .benefit-item img{
+            width: 450px;
+        }
+
+        .benefit-item .content{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+        }
+
+        .benefit-item .right{
+            text-align: right;
+            margin-right: 6rem;
+            
+        }
+
+        .benefit-item .left{
+            text-align: left;
+            margin-left: 6rem;
+            
+        }
+
+        .benefit-item .right h2, .benefit-item .left h2{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-item .right p, .benefit-item .left p{
+            font-weight: 200;
+            font-size: large;
+        }
+
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
-        input, button {
+
+        input,
+        button {
             padding: 10px;
             border-radius: 5px;
             border: 1px solid #ccc;
         }
+
         button {
             background: #ff7b00;
             color: white;
@@ -60,6 +112,7 @@
             border: none;
             cursor: pointer;
         }
+
         button:hover {
             background: #e06b00;
         }
@@ -72,7 +125,8 @@
     <!--==================================== CABEÇALHO ==================================== -->
     <header class="cabecalho">
         <a href="/" class="logo-link">
-            <img src="../../public/assets/images/logomarca/Kino Logo (1).png" width="40" height="40" alt="Kino Angola Logo">
+            <img src="../../public/assets/images/logomarca/Kino Logo (1).png" width="40" height="40"
+                alt="Kino Angola Logo">
             Kino Angola
         </a>
         <nav class="navbar">
@@ -101,40 +155,73 @@
         </div>
     </header>
 
-<main>
-        
-    <section id="benefits">
-        <h2>Vantagens de ser um parceiro</h2>
-        <div class="benefit-item">📈 Maior visibilidade no mercado</div>
-        <div class="benefit-item">🎯 Alcance clientes ideais com precisão</div>
-        <div class="benefit-item">💼 Ferramentas de gestão avançadas</div>
-        <div class="benefit-item">🤝 Suporte especializado e dedicado</div>
-    </section>
-    
-    <section id="testimonials">
-        <h2>O que nossos parceiros dizem</h2>
-        <blockquote>“Desde que entramos para a Kino Angola, nosso faturamento aumentou 40%!" – Restaurante X</blockquote>
-        <blockquote>“A plataforma facilitou a gestão dos nossos pedidos e clientes.” – Café Y</blockquote>
-    </section>
-    
-    <section id="signup">
-        <h2>Cadastre seu estabelecimento</h2>
-        <form id="signup-form">
-            <label for="name">Nome do Estabelecimento:</label>
-            <input type="text" id="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required>
-            
-            <label for="phone">Telefone:</label>
-            <input type="tel" id="phone" required>
-            
-            <button type="submit">Quero ser parceiro</button>
-        </form>
-    </section>
-</main>
+    <main>
 
-    
+        <section id="benefits">
+            <h1 class="title">Vantagens de ser um Kino Partner</h1>
+            <div class="benefit-item">
+                <img src="../../public/assets/images/vetc (1).jpg" alt="">
+                <div class="content right">
+                    <h2>Maior visibilidade no mercado</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laudantium quaerat vitae
+                        cumque sit. Modi ex voluptas fugit facilis dolor deserunt. Necessitatibus eveniet provident
+                        dolorum fuga enim aspernatur libero maxime.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="content left">
+                    <h2>Alcance clientes ideais com precisão</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laudantium quaerat vitae
+                        cumque sit. Modi ex voluptas fugit facilis dolor deserunt. Necessitatibus eveniet provident
+                        dolorum fuga enim aspernatur libero maxime.</p>
+                </div>
+                <img src="../../public/assets/images/vecta.jpg" alt="">
+            </div>
+            <div class="benefit-item">
+                <img src="../../public/assets/images/vetc (2).png" alt="">
+                <div class="content right">
+                    <h2>Ferramentas de gestão avançadas</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laudantium quaerat vitae
+                        cumque sit. Modi ex voluptas fugit facilis dolor deserunt. Necessitatibus eveniet provident
+                        dolorum fuga enim aspernatur libero maxime.</p>
+                </div>
+            </div>
+            <div class="benefit-item">
+                <div class="content left">
+                    <h2>Suporte especializado e dedicado</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti laudantium quaerat vitae
+                        cumque sit. Modi ex voluptas fugit facilis dolor deserunt. Necessitatibus eveniet provident
+                        dolorum fuga enim aspernatur libero maxime.</p>
+                </div>
+                <img src="../../public/assets/images/vetc (3).png" alt="">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>O que nossos parceiros dizem</h2>
+            <blockquote>“Desde que entramos para a Kino Angola, nosso faturamento aumentou 40%!" – Restaurante X
+            </blockquote>
+            <blockquote>“A plataforma facilitou a gestão dos nossos pedidos e clientes.” – Café Y</blockquote>
+        </section>
+
+        <section id="signup">
+            <h2>Cadastre seu estabelecimento</h2>
+            <form id="signup-form">
+                <label for="name">Nome do Estabelecimento:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" required>
+
+                <button type="submit">Quero ser parceiro</button>
+            </form>
+        </section>
+    </main>
+
+
     <!--==================================== RODAPÉ ==================================== -->
     <footer>
         <div class="content">
@@ -163,7 +250,7 @@
                     <a href="#">Descontos e Promoções</a>
                     <a href="#"><strong>kinoangolaoficial@gmail.com</strong></a>
                     <div class="social-links">
-                        
+
                     </div>
                 </div>
             </div>
