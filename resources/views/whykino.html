@@ -20,7 +20,41 @@
 
     <!-- Demo styles -->
     <style>
-       
+       section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff7b00;
+        }
+        .features, .values, .testimonials, .cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-item, .value-item, .testimonial-item, .cta-box {
+            flex: 1 1 300px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+        }
+        button {
+            padding: 10px;
+            background: #ff7b00;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #e06b00;
+        }
     </style>
 
 
@@ -64,7 +98,48 @@
 
 
 <main>
-
+    <section>
+        <h2>O que nos torna únicos?</h2>
+        <div class="features">
+            <div class="feature-item">🌍 Geolocalização em tempo real</div>
+            <div class="feature-item">🍽️ Recomendações personalizadas</div>
+            <div class="feature-item">📊 Estatísticas e insights para negócios</div>
+            <div class="feature-item">💬 Comunidade engajada e ativa</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Nossa Proposta de Valor</h2>
+        <div class="values">
+            <div class="value-item">🚀 Facilidade na busca de estabelecimentos</div>
+            <div class="value-item">📢 Promoção de micro e pequenos negócios</div>
+            <div class="value-item">🤝 Conexão direta entre clientes e empresas</div>
+            <div class="value-item">⚡ Plataforma intuitiva e moderna</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>O que nossos usuários dizem?</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">“Agora encontro os melhores restaurantes na minha área com facilidade!” – Usuário X</div>
+            <div class="testimonial-item">“A Kino Angola ajudou meu negócio a crescer e atrair novos clientes.” – Dono de Restaurante Y</div>
+            <div class="testimonial-item">“A plataforma é super intuitiva e cheia de opções incríveis.” – Cliente Z</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Faça Parte Agora!</h2>
+        <div class="cta">
+            <div class="cta-box">
+                <p>📲 Baixe nosso aplicativo e descubra novas experiências!</p>
+                <button>Baixar Agora</button>
+            </div>
+            <div class="cta-box">
+                <p>🏪 Tem um estabelecimento? Junte-se a nós e alcance mais clientes!</p>
+                <button>Cadastre seu Negócio</button>
+            </div>
+        </div>
+    </section>
 </main>
 
 

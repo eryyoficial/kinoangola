@@ -20,7 +20,29 @@
 
     <!-- Demo styles -->
     <style>
-       
+       section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff7b00;
+        }
+        .info, .values, .team, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .info-item, .value-item, .team-member, .contact-item {
+            flex: 1 1 300px;
+            padding: 20px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+        }
     </style>
 
 
@@ -63,7 +85,37 @@
 
 
 <main>
+    <section>
+        <h2>Nossa História</h2>
+        <p>A Kino Angola nasceu com o propósito de facilitar o acesso a restaurantes e experiências gastronômicas únicas em Angola. Criada por uma equipe apaixonada por tecnologia e culinária, nossa plataforma visa conectar clientes a estabelecimentos de forma prática e eficiente.</p>
+    </section>
     
+    <section>
+        <h2>Missão, Visão e Valores</h2>
+        <div class="values">
+            <div class="value-item">🎯 <strong>Missão:</strong> Facilitar a descoberta e acesso a estabelecimentos gastronômicos em Angola.</div>
+            <div class="value-item">🌍 <strong>Visão:</strong> Ser a principal plataforma gastronômica do país, promovendo negócios locais.</div>
+            <div class="value-item">🤝 <strong>Valores:</strong> Inovação, Qualidade, Transparência e Compromisso com os clientes e parceiros.</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Nossa Equipe</h2>
+        <div class="team">
+            <div class="team-member">👨‍💻 João Silva - CEO & Fundador</div>
+            <div class="team-member">👩‍💼 Maria Santos - Diretora de Operações</div>
+            <div class="team-member">👨‍🎨 Pedro Almeida - Designer UX/UI</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Entre em Contato</h2>
+        <div class="contact">
+            <div class="contact-item">📧 Email: contato@kinoangola.com</div>
+            <div class="contact-item">📍 Endereço: Luanda, Angola</div>
+            <div class="contact-item">📞 Telefone: +244 900 000 000</div>
+        </div>
+    </section>
 </main>
 
 
