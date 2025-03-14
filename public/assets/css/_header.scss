@@ -10,7 +10,7 @@ header {
     top: 0;
     z-index: $z-indez-2;
 
-    .burguer{
+    .burguer {
         display: none;
     }
 
@@ -27,10 +27,10 @@ header {
     /* NAVBAR */
     .navbar {
         width: 500px;
-        @include BorderTeste();
+
         .nav-list {
             @include FlexBox (space-between, center, row);
-            gap: 2rem;
+            gap: 2rem;  
 
             .nav-link {
                 color: $color-black;
@@ -47,7 +47,7 @@ header {
             color: $color-black;
             transition: $transicao;
 
-            &:hover i{
+            &:hover i {
                 transform: translateY(-2px);
             }
 
@@ -72,24 +72,55 @@ header {
 
 
 @media (max-width: 1150px) {
-   
-    header{
+
+    body{
         position: relative;
-        .navbar{
+    }
+    header {
+
+        .navbar {
+            /* display: none; */
             position: absolute;
+            z-index: $z-indez-4;
+            width: 100vw;
+            height: 100vh;
+            background-color: $color-white;
+            padding: 3rem;
             top: 0;
             right: 0;
+
             .nav-list {
-                @include FlexBox (space-between, center, row);
-                gap: 2rem;}
+                @include FlexBox (center, center, column);
+                padding: 1rem;
+                margin: auto;
+                gap: 2rem;
+                width: 100%;
+                
+                .nav-item{
+                    margin: auto;
+                    padding: 1rem;
+
+                    .nav-link{
+                        font-size: $size-x-large;
+                        padding: 1rem;
+                        margin: auto;
+                        text-align: center;
+                        width: 400px;
+                    }
+                }
+            }
         }
-        .extras{
-            position: absolute;
-            margin-top: 2rem;
-            right: 0;
-        }
-        .burguer{
+
+        .burguer {
             display: block;
+            border: none;
+            background-color: transparent;
+
+            i{
+                font-weight: $weight-semibold;
+                font-size: $size-big;
+            }
+
         }
 
     }

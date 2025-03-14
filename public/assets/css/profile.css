@@ -407,7 +407,6 @@ header .logo-link {
 }
 header .navbar {
   width: 500px;
-  border: solid red;
 }
 header .navbar .nav-list {
   display: flex;
@@ -453,28 +452,49 @@ header .extras .link-login {
 }
 
 @media (max-width: 1150px) {
-  header {
+  body {
     position: relative;
   }
   header .navbar {
+    /* display: none; */
     position: absolute;
+    z-index: 66;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    padding: 3rem;
     top: 0;
     right: 0;
   }
   header .navbar .nav-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
     gap: 2rem;
+    width: 100%;
   }
-  header .extras {
-    position: absolute;
-    margin-top: 2rem;
-    right: 0;
+  header .navbar .nav-list .nav-item {
+    margin: auto;
+    padding: 1rem;
+  }
+  header .navbar .nav-list .nav-item .nav-link {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    width: 400px;
   }
   header .burguer {
     display: block;
+    border: none;
+    background-color: transparent;
+  }
+  header .burguer i {
+    font-weight: 600;
+    font-size: 1.75rem;
   }
 }
 .perfil-business .profile-container {
