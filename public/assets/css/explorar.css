@@ -1053,4 +1053,11 @@ footer .copy {
   .locais .content {
     padding-inline: 2rem;
   }
+}
+@media (max-width: 600px) {
+  .locais .content {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    padding: 1rem 2rem;
+  }
 }/*# sourceMappingURL=explorar.css.map */

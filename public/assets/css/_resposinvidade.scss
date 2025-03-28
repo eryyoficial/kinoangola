@@ -461,3 +461,12 @@
         }
     }
 }
+
+@media (max-width: 600px) {
+    .locais{
+        .content{
+            @include FlexGrid (1, 250px);
+            padding: 1rem 2rem;
+        }
+    }
+}
