@@ -10,7 +10,7 @@ header {
     top: 0;
     z-index: $z-indez-2;
 
-    .burguer {
+    .mobile-menu {
         display: none;
     }
 
@@ -30,7 +30,7 @@ header {
 
         .nav-list {
             @include FlexBox (space-between, center, row);
-            gap: 2rem;  
+            gap: 2rem;
 
             .nav-link {
                 color: $color-black;
@@ -44,6 +44,7 @@ header {
         @include FlexBox (center, center, row);
 
         .link-extra {
+            @include FlexBox (center, center, row);
             color: $color-black;
             transition: $transicao;
 
@@ -71,56 +72,99 @@ header {
 }
 
 
-@media (max-width: 1150px) {
-
-    body{
-        position: relative;
-    }
+@media (max-width: 1200px) {
     header {
+        width: 100vw;
+        position: relative;
+        @include FlexBox(space-between, center, row);
+
+        .mobile-menu {
+            display: block;
+            cursor: pointer;
+            scale: .8;
+            z-index: $z-indez-1;
+        }
+
+        .mobile-menu div {
+            width: 32px;
+            height: 4px;
+            margin: 8px;
+            background-color: $color-black;
+            transition: $transicao;
+        }
 
         .navbar {
-            /* display: none; */
             position: absolute;
             z-index: $z-indez-4;
             width: 100vw;
             height: 100vh;
             background-color: $color-white;
-            padding: 3rem;
+            padding: 1rem;
             top: 0;
             right: 0;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in;
 
             .nav-list {
-                @include FlexBox (center, center, column);
-                padding: 1rem;
-                margin: auto;
-                gap: 2rem;
+                @include FlexBox (center, stretch, column);
+                gap: .5rem;
                 width: 100%;
-                
-                .nav-item{
-                    margin: auto;
-                    padding: 1rem;
 
-                    .nav-link{
-                        font-size: $size-x-large;
-                        padding: 1rem;
-                        margin: auto;
-                        text-align: center;
-                        width: 400px;
+                .nav-item {
+
+                    @include FlexBox (center, stretch, column);
+                    text-align: center;
+
+                    .nav-link {
+                        padding: 2rem 0rem;
+                        font-weight: $weight-semibold;
+                        font-size: $size-large;
+                        transition: $transicao;
+
+                        &:hover {
+                            background-color: $color-gray-light;
+                        }
                     }
                 }
             }
         }
 
-        .burguer {
-            display: block;
-            border: none;
-            background-color: transparent;
+        .navbar.active {
+            transform: translateX(0);
+        }
 
-            i{
-                font-weight: $weight-semibold;
-                font-size: $size-big;
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
             }
 
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .mobile-menu.active .line1 {
+            transform: rotate(45deg) translate(8px, 8px);
+        }
+
+        .mobile-menu.active .line2 {
+            opacity: 0;
+        }
+
+        .mobile-menu.active .line3 {
+            transform: rotate(-45deg) translate(8px, -9px);
+        }
+
+        .extras {
+            .link-extra i{
+                font-size: $size-x-large;
+            }
+
+            .link-login{
+                margin-left: 1rem;
+            }
         }
 
     }

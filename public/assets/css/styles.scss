@@ -13,7 +13,7 @@
 /*======================================== HERO - BANNER EM CARROSSEL ======================================== */
 
 .HeroSwiper {
-    width: 100%;
+    width: 100vw;
     height: 500px;
     background-color: $color-white;
 
@@ -195,12 +195,9 @@
         @include FlexGrid (2, 450px);
         gap: 0;
 
-        img {
-            flex-grow: 1;
-        }
+       
 
         .desc {
-            flex-grow: 1;
             @include FlexBox (start, flex-start, column);
             height: 100%;
 
@@ -284,10 +281,93 @@
 }
 
 
+/*======================================== FOOD ======================================== */
+.food {
+    @extend .container;
+    @include FlexBox(center, center, column);
+    background-color: $color-white;
+
+
+    .FoodSwiper {
+        width: 100%;
+        height: 100%;
+        padding-block: 4rem;
+
+
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                padding-inline: 1rem;
+                @include FlexGrid(4, 1fr);
+                gap: 2rem;
+
+                .card-pratos {
+                    box-shadow: $shadow-3;
+                    border-radius: $radius-second;
+
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        border-top-left-radius: $radius-second;
+                        border-top-right-radius: $radius-second;
+                    }
+
+                    .info {
+                        @extend .informacoes-cards-vertical;
+                        padding: .7rem;
+                        background-color: $color-white;
+                        border-bottom-left-radius: $radius-second;
+                        border-bottom-right-radius: $radius-second;
+
+                    }
+                }
+            }
+        }
+
+
+        .swiper-botoes{
+            position: absolute;
+            width: 170px;
+            border: solid red;
+            @include FlexBox (space-between, flex-start, row);
+            gap: 1rem;
+            top: 0%;
+            left: -4%;
+            z-index: 3;
+
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            scale: .4;
+            font-weight: $weight-extrabold;
+            color: $color-gray-dark;
+            background-color: $color-white;
+            padding: 3rem;
+            border-radius: $radius-around;
+            box-shadow: $shadow-3;
+            transition: $transicao;
+
+            &:hover {
+                background-color: $color-white-background;
+                scale: .4;
+            }
+        }
+
+        .swiper-button-prev {
+        }
+
+        .swiper-button-next {
+        }
+    }
+
+}
+
+
 /*======================================== PESQUISA FILTRADA & MAP ======================================== */
 .filtersearch {
     @extend .container;
-    @include FlexBox(start, stretch, row);
+    @include FlexBox(space-between, stretch, row);
     flex-wrap: wrap;
     background-color: $color-white;
     gap: 1rem;
@@ -304,8 +384,21 @@
         border-radius: $radius-second;
     }
 
+
+    .search-map {
+        min-width: 400px;
+        flex: 1;
+        height: 400px;
+        padding: 2rem;
+        box-shadow: $shadow-2;
+        border-radius: $radius-first;
+        background-color: $color-white-background;
+
+    }
+
     .content {
         @include FlexBox (center, stretch, column);
+        flex: 1;
         padding: 2rem;
         box-shadow: $shadow-2;
         border-radius: $radius-first;
@@ -314,7 +407,6 @@
 
         .tools {
             position: relative;
-            flex-grow: 1;
             box-shadow: $shadow-2;
             @include FlexBox (center, stretch, row);
             border-radius: $radius-first;
@@ -414,16 +506,28 @@
         .PesquisaSwiper {
             position: relative;
             padding: 1rem;
-            max-width: 550px;
+            max-width: 600px;
             width: 100%;
             height: 100%;
             padding-bottom: 5.5rem;
             z-index: 2;
 
-            .swiper-button-prev,
-            .swiper-button-next {
+
+            .swiper-botoes{
+                width: 160px;
+                @include FlexBox (space-between, center, row);
+                gap: 1rem;
+                border: solid red;
                 position: absolute;
                 top: 3%;
+                right: -5%;
+                z-index: 3;
+
+            }
+
+
+            .swiper-button-prev,
+            .swiper-button-next {
                 scale: .37;
                 font-weight: $weight-extrabold;
                 color: $color-gray-dark;
@@ -441,12 +545,9 @@
             }
 
             .swiper-button-prev {
-                left: 75%;
-                z-index: 3;
             }
 
             .swiper-button-next {
-                right: 0%;
             }
 
             .swiper-wrapper {
@@ -507,15 +608,6 @@
 
     }
 
-    .search-map {
-        width: 500px;
-        height: 400px;
-        padding: 2rem;
-        box-shadow: $shadow-2;
-        border-radius: $radius-first;
-        background-color: $color-white-background;
-
-    }
 }
 
 
@@ -599,82 +691,6 @@
             }
         }
     }
-}
-
-
-/*======================================== FOOD ======================================== */
-.food {
-    @extend .container;
-    @include FlexBox(center, center, column);
-    background-color: $color-white;
-
-
-    .FoodSwiper {
-        width: 100%;
-        height: 100%;
-        padding-block: 4rem;
-
-
-
-        .swiper-wrapper {
-
-            .swiper-slide {
-                padding-inline: 1rem;
-                @include FlexGrid(4, 1fr);
-                gap: 2rem;
-
-                .card-pratos {
-                    box-shadow: $shadow-3;
-                    border-radius: $radius-second;
-
-                    img {
-                        width: 100%;
-                        object-fit: cover;
-                        border-top-left-radius: $radius-second;
-                        border-top-right-radius: $radius-second;
-                    }
-
-                    .info {
-                        @extend .informacoes-cards-vertical;
-                        padding: .7rem;
-                        background-color: $color-white;
-                        border-bottom-left-radius: $radius-second;
-                        border-bottom-right-radius: $radius-second;
-
-                    }
-                }
-            }
-        }
-
-        .swiper-button-prev,
-        .swiper-button-next {
-            position: absolute;
-            top: 0%;
-            scale: .4;
-            font-weight: $weight-extrabold;
-            color: $color-gray-dark;
-            background-color: $color-white;
-            padding: 3rem;
-            border-radius: $radius-around;
-            box-shadow: $shadow-3;
-            transition: $transicao;
-            z-index: 3;
-
-            &:hover {
-                background-color: $color-white-background;
-                scale: .4;
-            }
-        }
-
-        .swiper-button-prev {
-            left: -2%;
-        }
-
-        .swiper-button-next {
-            right: 89.6%;
-        }
-    }
-
 }
 
 
@@ -873,3 +889,4 @@
 
 
 @import './footer';
+@import './resposinvidade';

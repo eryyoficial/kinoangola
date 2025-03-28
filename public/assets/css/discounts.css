@@ -391,7 +391,7 @@ header {
   /* NAVBAR */
   /* EXTRAS */
 }
-header .burguer {
+header .mobile-menu {
   display: none;
 }
 header .logo-link {
@@ -429,6 +429,10 @@ header .extras {
   flex-direction: row;
 }
 header .extras .link-extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   color: #2a2a2a;
   transition: 0.4s;
 }
@@ -451,50 +455,91 @@ header .extras .link-login {
   color: #FFFFFF;
 }
 
-@media (max-width: 1150px) {
-  body {
+@media (max-width: 1200px) {
+  header {
+    width: 100vw;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  header .mobile-menu {
+    display: block;
+    cursor: pointer;
+    scale: 0.8;
+    z-index: 99;
+  }
+  header .mobile-menu div {
+    width: 32px;
+    height: 4px;
+    margin: 8px;
+    background-color: #2a2a2a;
+    transition: 0.4s;
   }
   header .navbar {
-    /* display: none; */
     position: absolute;
     z-index: 66;
     width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
-    padding: 3rem;
+    padding: 1rem;
     top: 0;
     right: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
   }
   header .navbar .nav-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
-    padding: 1rem;
-    margin: auto;
-    gap: 2rem;
+    gap: 0.5rem;
     width: 100%;
   }
   header .navbar .nav-list .nav-item {
-    margin: auto;
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
   }
   header .navbar .nav-list .nav-item .nav-link {
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: auto;
-    text-align: center;
-    width: 400px;
-  }
-  header .burguer {
-    display: block;
-    border: none;
-    background-color: transparent;
-  }
-  header .burguer i {
+    padding: 2rem 0rem;
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
+    transition: 0.4s;
+  }
+  header .navbar .nav-list .nav-item .nav-link:hover {
+    background-color: #F4F2F2;
+  }
+  header .navbar.active {
+    transform: translateX(0);
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  header .mobile-menu.active .line1 {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  header .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  header .mobile-menu.active .line3 {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+  header .extras .link-extra i {
+    font-size: 1.5rem;
+  }
+  header .extras .link-login {
+    margin-left: 1rem;
   }
 }
 footer {
@@ -566,4 +611,321 @@ footer .copy {
   color: #909294;
   font-size: 0.813rem;
   opacity: 0.75;
+}
+
+@media (max-width: 992px) {
+  header {
+    width: 100%;
+    border: solid red;
+  }
+  header .mobile-menu {
+    scale: 0.6;
+  }
+  header .logo-link {
+    display: none;
+  }
+  header .navbar .nav-list {
+    margin-top: 3rem;
+  }
+  header .extras .link-extra i {
+    font-size: 1.25rem;
+  }
+  header .extras .link-extra .link-login {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 2rem 4rem;
+  }
+  .container h2 {
+    font-size: 1.75rem;
+    margin: 2rem auto 1rem;
+    text-align: center;
+  }
+  /*======================================== INDEX ======================================== */
+  /* HERO */
+  .HeroSwiper .hero-slide-1 .content {
+    width: 650px;
+  }
+  .HeroSwiper .hero-slide-2 .content {
+    padding: 0;
+  }
+  .HeroSwiper .hero-slide-2 .content .cta {
+    margin-top: 2.5rem;
+  }
+  .HeroSwiper .hero-slide-3 .content {
+    width: 650PX;
+  }
+  /* DESTAQUE */
+  .destaque .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    place-items: center;
+  }
+  .destaque .content img {
+    width: 100%;
+  }
+  .destaque .content .desc p {
+    font-size: 0.938rem;
+  }
+  .destaque .content .desc .botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1.5rem;
+    gap: 0.6rem;
+  }
+  .destaque .content .desc .botoes .btn-c,
+  .destaque .content .desc .botoes .btn-p-2,
+  .destaque .content .desc .botoes header .extras .link-login,
+  header .extras .destaque .content .desc .botoes .link-login {
+    font-size: 0.813rem;
+  }
+  .destaque .content .desc .botoes .btn-c {
+    margin-left: 0;
+  }
+  /* SERVIÇOS */
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .services .content {
+    padding: 0.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .services .content .service-card {
+    width: 400px;
+  }
+  /* FOOD */
+  .food .FoodSwiper .swiper-wrapper .swiper-slide {
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+  }
+  /* LOCAIS */
+  .locais .content {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+  .locais .content .link-card {
+    width: 100%;
+  }
+  .locais .content .link-card img {
+    width: 100%;
+  }
+  .cadastro-locais {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .cadastro-locais .content {
+    width: 70%;
+  }
+  .cadastro-locais form {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  footer .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media (max-width: 780px) {
+  /*======================================== INDEX ======================================== */
+  /* HERO */
+  .HeroSwiper .hero-slide-1 .content,
+  .HeroSwiper .hero-slide-3 .content {
+    width: 550px;
+  }
+  .HeroSwiper .hero-slide-1 .content h3,
+  .HeroSwiper .hero-slide-3 .content h3 {
+    font-size: 2rem;
+  }
+  /* DESTAQUE */
+  .destaque .content .desc h3 {
+    font-size: 2rem;
+  }
+  /* LOCAIS */
+  .locais .content {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+  }
+  .locais .content .link-card img {
+    height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  /*======================================== INDEX ======================================== */
+  /* HERO */
+  .HeroSwiper .hero-slide-1 .content,
+  .HeroSwiper .hero-slide-3 .content {
+    width: 100%;
+    padding: 3rem 4rem;
+  }
+  .HeroSwiper .hero-slide-1 .content form {
+    width: 100%;
+  }
+  .HeroSwiper .hero-slide-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+  }
+  .HeroSwiper .hero-slide-3 {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  /* DESTAQUE */
+  .destaque .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    place-items: center;
+  }
+  .destaque .content img {
+    width: 80%;
+  }
+  .destaque .content .desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* FILTRO DE PESQUISA COM MAPA */
+  .filtersearch {
+    padding: 2rem;
+  }
+  .filtersearch .search-map {
+    min-width: 250px;
+    flex: 1;
+    height: 300px;
+  }
+  .filtersearch .content {
+    width: 100%;
+    flex: 1;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 2rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+    margin: 2rem auto 1rem;
+    text-align: center;
+  }
+  /*======================================== INDEX ======================================== */
+  /* SERVIÇOS */
+  .services {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .services .content {
+    padding: 0.5rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .services .content .service-card {
+    width: 400px;
+  }
+  /* FOOD */
+  .food {
+    padding: 0.5rem;
+  }
+  .food .FoodSwiper .swiper-wrapper .swiper-slide {
+    padding-bottom: 1rem;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+  }
+  .locais .content {
+    padding-inline: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+  }
+  .locais .content .link-card {
+    width: 100%;
+  }
+  .locais .content .link-card img {
+    width: 100%;
+  }
+  .cadastro-locais {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .cadastro-locais form {
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column;
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+  footer .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media (max-width: 668px) {
+  /*======================================== INDEX ======================================== */
+  .HeroSwiper .swiper-slide .content {
+    padding: 2rem 3.5rem;
+  }
+  .HeroSwiper .swiper-slide .content h1 {
+    font-size: 2.3rem;
+    border: solid red;
+  }
+  .HeroSwiper .hero-slide-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .HeroSwiper .hero-slide-2 .content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .HeroSwiper .hero-slide-2 .content p, .HeroSwiper .hero-slide-2 .content h2, .HeroSwiper .hero-slide-2 .content div {
+    padding: 0;
+  }
+  .HeroSwiper .hero-slide-2 .content h2 {
+    font-size: 2.5rem;
+  }
+  .locais .content {
+    padding-inline: 2rem;
+  }
 }/*# sourceMappingURL=discounts.css.map */
