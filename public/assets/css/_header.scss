@@ -1,6 +1,7 @@
 /*======================================== CABEÇALHO ======================================== */
 
 header {
+    position: sticky;
     @include FlexGrid (3, 1fr);
     place-items: center;
     background-color: $color-white;

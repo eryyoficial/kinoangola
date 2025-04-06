@@ -1,7 +1,70 @@
+@import './vars';
+@import './mixins';
+@import './essencial';
+
+
+
+
+
+
+@media (max-width: 1300px) {
+
+    .services,
+    .locais,
+    .food {
+        padding: 2rem 3rem;
+    }
+
+    .cadastro-locais {
+        padding: 2rem 6rem;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+
+    .services {
+        margin: 0;
+
+        .content {
+
+            padding: 0;
+        }
+    }
+
+    /* LOCAIS */
+    .locais {
+        .content {
+            @include FlexGrid (2, 250px);
+
+            .link-card {
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .food {
+        .FoodSwiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: 480px;
+                    overflow-y: hidden;
+                    @include FlexGrid(3, 1fr);
+                }
+            }
+        }
+    }
+
+}
+
+
 @media (max-width: 992px) {
     header {
         width: 100%;
-        border: solid red;
 
         .mobile-menu {
             scale: .6;
@@ -143,7 +206,6 @@
                     overflow-x: hidden;
                     @include FlexGrid(4, 250px);
 
-                    .card-pratos {}
                 }
             }
 
@@ -152,21 +214,7 @@
     }
 
 
-    /* LOCAIS */
-    .locais {
-        .content {
-            @include FlexGrid (2, 300px);
 
-
-            .link-card {
-                width: 100%;
-
-                img {
-                    width: 100%;
-                }
-            }
-        }
-    }
 
     .cadastro-locais {
         text-align: center;
@@ -209,8 +257,12 @@
             .content {
                 width: 550px;
 
-                h3 {
-                    font-size: $size-biggest;
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    padding: 0;
                 }
 
             }
@@ -243,6 +295,17 @@
                 img {
                     height: 250px;
                 }
+            }
+        }
+    }
+
+
+    .empresas {
+
+        .EmpresasSwiper {
+
+            h2 {
+                padding-inline: 2rem;
             }
         }
     }
@@ -282,7 +345,6 @@
             padding: 0;
             @include FlexBox (center, stretch, column);
 
-            .content {}
         }
     }
 
@@ -324,8 +386,6 @@
 }
 
 
-
-
 @media (max-width: 700px) {
 
     .container {
@@ -338,7 +398,6 @@
             text-align: center
         }
     }
-
 
 
 
@@ -362,7 +421,7 @@
 
     /* FOOD */
     .food {
-        padding: 0.5rem;
+        padding: 0.5rem 0rem 0.5rem 2rem;
 
         .FoodSwiper {
 
@@ -372,12 +431,8 @@
                     padding-bottom: 1rem;
                     overflow-x: hidden;
                     @include FlexGrid(4, 250px);
-
-                    .card-pratos {}
                 }
             }
-
-
         }
     }
 
@@ -430,30 +485,30 @@
         .swiper-slide {
             .content {
                 padding: 2rem 3.5rem;
-                h1 {
-                    font-size: 2.3rem;
-                    border: solid red;
-                }
             }
         }
 
-        .hero-slide-2{
+        .hero-slide-2 {
             @include FlexBox (center, center, column);
-            .content{
+
+            .content {
                 text-align: center;
                 @include FlexBox (center, center, column);
                 padding: 0;
 
-                p, h2, div{
+                p,
+                h2,
+                div {
                     padding: 0;
                 }
 
-                h2{
+                h2 {
                     font-size: 2.5rem;
                 }
             }
         }
     }
+
 
     .locais {
         .content {
@@ -463,10 +518,270 @@
 }
 
 @media (max-width: 600px) {
-    .locais{
-        .content{
+
+    .destaque {
+        padding-inline: 4rem;
+    }
+
+    .locais {
+        .content {
             @include FlexGrid (1, 250px);
             padding: 1rem 2rem;
+        }
+    }
+
+    .cadastro-locais {
+
+        .content {
+            width: 90%;
+
+            h2 {
+                font-size: $size-biggest;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                width: 80%;
+                color: $color-gray-darkness-2;
+            }
+        }
+    }
+
+    .filtersearch {
+
+        .tools {
+            display: block;
+            flex: 1;
+            margin: 5%;
+        }
+
+        .content {
+            padding: 0;
+
+            .swiper-wrapper {
+                .swiper-slide {
+                    .card-pratos {
+                        .info {
+
+                            .acima {
+
+                                .spans {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    flex-direction: row;
+                                    flex-wrap: nowrap;
+                                    gap: 0.3rem;
+                                    margin-top: 8px;
+
+                                    .tagincolhe {
+
+                                        .pop,
+                                        .freeshipping {
+
+                                            font-size: 2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 570px) {
+
+    .HeroSwiper {
+        .content {
+            padding: 1rem;
+        }
+    }
+
+    .filtersearch {
+        .content {
+            .PesquisaSwiper {
+
+                .swiper-slide {
+                    margin-top: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                }
+
+                #cardone {
+                    margin: 2rem auto auto;
+                    @include FlexBox(space-between, stretch, column);
+                    padding: 0;
+                    max-width: 320px;
+
+                    img {
+                        width: 100%;
+                        border-bottom-left-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+
+                    .info {
+                        padding: .5rem;
+
+                        .pop {
+                            margin-left: 0.3rem;
+                        }
+
+                        h3 {
+                            margin-top: 0.5rem;
+                        }
+
+                        .extras {
+                            margin-top: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cadastro-locais {
+        padding: 1rem;
+
+        .content {
+            width: 100%;
+
+            form {
+                width: 100%;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    footer {
+        .content {
+            @include FlexGrid (1, 1fr);
+        }
+    }
+}
+
+@media (max-width:460px) {
+
+    .destaque {
+        padding: 2rem;
+
+        .content {
+            gap: 1.75rem;
+
+            h3 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    /* HERO */
+    .HeroSwiper {
+
+        .swiper-slide {
+
+            .content {
+                padding: 1.5rem;
+
+                h1,
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .hero-slide-2 {
+            @include FlexGrid (1, 400px);
+            gap: 1rem;
+
+            .content {
+
+                .paragrafito {
+                    margin-bottom: 1rem;
+                }
+
+                h2 {
+                    font-size: 2.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+    }
+
+    .services {
+        .content {
+            padding: 2rem;
+
+            .service-card {
+                max-width: 340px;
+            }
+        }
+    }
+
+    .filtersearch {
+        padding: 1rem;
+    }
+}
+
+
+@media (max-width:360px) {
+
+    .food {
+        padding: 0.7rem;
+
+        .content {
+            .swiper-wrapper {
+
+                .swiper-slide {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    /* HERO */
+    .HeroSwiper {
+
+        .swiper-slide {
+
+            .content {
+                padding: 0 1.5rem;
+
+                h1,
+                h2 {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+    }
+
+    .services {
+        .content {
+            padding: 1rem;
+
+            .service-card {
+                max-width: 290px;
+            }
+        }
+    }
+
+    .filtersearch {
+        .content {
+            .btn-input-text {
+                max-width: 150px;
+            }
+        }
+    }
+
+    .cadastro-locais{
+
+        form{
+            width: 100%;
+            padding: 1rem;
         }
     }
 }

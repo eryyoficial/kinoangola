@@ -246,7 +246,7 @@
     }
 
     .content {
-        @include FlexGrid (3, 300px);
+        @include FlexGrid (3, 1fr);
         text-align: center;
         place-items: center;
         margin: auto;
@@ -329,7 +329,6 @@
         .swiper-botoes{
             position: absolute;
             width: 170px;
-            border: solid red;
             @include FlexBox (space-between, flex-start, row);
             gap: 1rem;
             top: 0%;
@@ -354,11 +353,8 @@
             }
         }
 
-        .swiper-button-prev {
-        }
 
-        .swiper-button-next {
-        }
+
     }
 
 }
@@ -500,6 +496,7 @@
                     background-color: white;
                     border-radius: $radius-second;
                 }
+            
             }
         }
 
@@ -517,7 +514,6 @@
                 width: 160px;
                 @include FlexBox (space-between, center, row);
                 gap: 1rem;
-                border: solid red;
                 position: absolute;
                 top: 3%;
                 right: -5%;
@@ -544,11 +540,7 @@
                 }
             }
 
-            .swiper-button-prev {
-            }
-
-            .swiper-button-next {
-            }
+      
 
             .swiper-wrapper {
                 padding: 0 2rem 0 0;
@@ -583,7 +575,6 @@
 
                         .info {
                             @extend .informacoes-cards-horizontal;
-
                         }
                     }
                 }
@@ -619,6 +610,7 @@
 
     .content {
         @include FlexGrid (4, 250px);
+        place-items: center;
         gap: 2rem;
         margin: 1rem 0 4rem;
 
